@@ -77,7 +77,7 @@ export function Header() {
           </Link>
 
           <Link
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center rounded bg-[var(--color-brand)] px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-[var(--color-brand-dark)]"
           >
             {nav.cta}
