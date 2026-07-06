@@ -88,6 +88,9 @@
 // }
 
 
+
+
+
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -114,12 +117,18 @@ export function Hero() {
       <Container className="relative flex flex-col gap-16 py-24 lg:flex-row lg:items-start lg:justify-between lg:py-32">
         {/* Left: headline */}
         <div className="max-w-xl">
-          <div className="mb-7 flex items-center gap-3">
+          {/* <div className="mb-7 flex items-center gap-3">
             <span className="h-px w-8 bg-[var(--color-brand)]" />
             <span className="eyebrow text-[var(--color-brand)]">
               {hero.eyebrow}
             </span>
-          </div>
+          </div> */}
+          <div className="mb-7 flex items-center gap-3">
+  <span className="h-px w-8 bg-[var(--color-brand)]" />
+  <span className="eyebrow bg-[var(--color-brand)] !text-white">
+    {hero.eyebrow}
+  </span>
+</div>
 
           <h1 className="font-display text-[2.75rem] leading-[1.08] text-white sm:text-[3.5rem] lg:text-[4.25rem]">
             {hero.heading[0]}
@@ -139,8 +148,8 @@ export function Hero() {
             <Button href="#verticals" variant="primary" icon>
               {hero.primaryCta}
             </Button>
-            <a
-              href="#contact"
+            
+            <a  href="#contact"
               className="text-[14px] text-white/80 underline underline-offset-4 decoration-white/40 transition-colors hover:text-white hover:decoration-white"
             >
               {hero.secondaryCta}
@@ -178,4 +187,3 @@ export function Hero() {
     </section>
   );
 }
-
