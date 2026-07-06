@@ -27,8 +27,8 @@ export default function Home() {
         <PropertyManagement />
         <FourOutcomes />
         <Accountability />
-        {/* <WhereWeOperate />
-        <TechPlatforms /> */}
+        <WhereWeOperate />
+        <TechPlatforms />
         <CTA />
       </main>
       <Footer />
