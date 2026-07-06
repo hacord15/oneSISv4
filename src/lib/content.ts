@@ -5,7 +5,7 @@
 export const nav = {
   logo: "OneSIS",
   parentBadge: "SIS Group Co.",
-  cta: "Contact Us",
+  cta: "Download Company Profile",
   links: [
     {
       label: "HOME",
@@ -64,9 +64,9 @@ export const anchorStrip = [
 ];
 
 export const hero = {
-  eyebrow: "India's #1 Facility Partner",
-  heading: ["Manage Every", "Facility."],
-  headingAccent: "One Contract.",
+  eyebrow: "One Vision, Every Solution",
+  heading: ["Your One-Stop", "Partner for "],
+  headingAccent: "Integrated Facility Management",
   body: "Technology-driven, fully self-delivered facility solutions — FM, property management, hardcore repair & maintenance, and office fitouts — backed by SIS Group's ₹20,059 Cr enterprise strength.",
   primaryCta: "Explore Solutions",
   secondaryCta: "Download Company Profile",

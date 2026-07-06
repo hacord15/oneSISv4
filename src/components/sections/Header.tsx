@@ -65,7 +65,7 @@ export function Header() {
 
         {/* Right Section */}
         <div className="flex items-center gap-4">
-          <Link href="https://sisindia.com/" target="_blank" rel="noreferrer" className="shrink-0">
+  <Link href="https://sisindia.com/" target="_blank" rel="noreferrer" className="shrink-0">
             <Image
               src="/assests/main-logo.png"
               alt="SIS Logo"
@@ -76,12 +76,16 @@ export function Header() {
             />
           </Link>
 
-          <Link
-            href="/contact"
+           <Link
+            href="#DownloadCompanyProfile"
             className="inline-flex items-center rounded bg-[var(--color-brand)] px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-[var(--color-brand-dark)]"
           >
             {nav.cta}
           </Link>
+
+        
+
+         
         </div>
       </Container>
     </header>

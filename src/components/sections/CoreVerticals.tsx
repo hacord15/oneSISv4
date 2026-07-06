@@ -25,20 +25,23 @@ export function CoreVerticals() {
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 pt-10 sm:grid-cols-2 lg:grid-cols-4">
           {verticals.items.map((item) => (
-            <div key={item.index}>
+            <div
+              key={item.index}
+              className="group cursor-pointer transition-all duration-300 ease-out hover:-translate-y-1"
+            >
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src={images[item.image as keyof typeof images]}
                   alt={item.title}
                   fill
                   sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />
               </div>
 
               <div className="pt-6">
                 <span className="eyebrow">{item.index}</span>
-                <h3 className="mt-3 font-display text-xl leading-snug text-[var(--color-ink)]">
+                <h3 className="mt-3 font-display text-xl leading-snug text-[var(--color-ink)] transition-opacity duration-300 group-hover:opacity-70">
                   {item.title}
                 </h3>
                 <p className="mt-2.5 text-[13.5px] leading-relaxed text-[var(--color-body)]">
@@ -46,7 +49,10 @@ export function CoreVerticals() {
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {item.tags.map((tag) => (
-                    <Tag key={tag} className="px-2.5 py-1 text-[10px]">
+                    <Tag
+                      key={tag}
+                      className="px-2.5 py-1 text-[10px] transition-colors duration-300 group-hover:border-[var(--color-ink)]"
+                    >
                       {tag}
                     </Tag>
                   ))}
