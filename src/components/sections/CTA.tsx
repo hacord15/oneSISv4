@@ -1,7 +1,9 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 import { cta } from "@/lib/content";
+import { images } from "@/lib/images";
 
 export function CTA() {
   return (
@@ -27,7 +29,7 @@ export function CTA() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 border-t border-[var(--color-border)] lg:border-t-0 lg:border-l">
+        {/* <div className="grid grid-cols-2 border-t border-[var(--color-border)] lg:border-t-0 lg:border-l">
           {cta.stats.map((stat, i) => (
             <div
               key={stat.label}
@@ -45,7 +47,69 @@ export function CTA() {
               </div>
             </div>
           ))}
+        </div> */}
+
+        {/* <div className="grid grid-cols-2 border-t border-[var(--color-border)] lg:border-t-0 lg:border-l">
+  {[
+    images.verticalIntegratedFM,
+    images.verticalPropertyMgmt,
+    images.verticalHardcoreRepair,
+    images.verticalOfficeInterior,
+  ].map((img, i) => (
+    <div
+      key={img}
+      className={`relative aspect-square border-[var(--color-border)] ${
+        i % 2 === 0 ? "border-r" : ""
+      } ${i < 2 ? "border-b" : ""}`}
+    >
+      <Image src={img} alt="" fill className="object-cover" />
+    </div>
+  ))}
+</div> */}
+
+
+<div className="grid grid-cols-2 border-t border-[var(--color-border)] lg:border-t-0 lg:border-l">
+  {cta.stats.map((stat, i) => (
+    <div
+      key={i}
+      className={`relative h-[320px] overflow-hidden border-[var(--color-border)] ${
+        i % 2 === 0 ? "border-r" : ""
+      } ${i < 2 ? "border-b" : ""}`}
+    >
+      {/* Image Cards */}
+      {i === 0 || i === 3 ? (
+        <Image
+          src={
+            i === 0
+              ? images.verticalIntegratedFM
+              : images.verticalOfficeInterior
+          }
+          alt=""
+          fill
+          className="object-cover"
+        />
+      ) : (
+        /* Text Cards */
+        <div
+          className={`flex h-full flex-col items-center justify-center text-center px-8 ${
+            stat.highlighted
+              ? "bg-[var(--color-brand-tint)]"
+              : "bg-white"
+          }`}
+        >
+          <div className="font-display text-4xl text-[var(--color-ink)]">
+            {stat.value}
+          </div>
+
+          <div className="mt-3 text-sm font-semibold uppercase tracking-[0.08em] text-[var(--color-muted)]">
+            {stat.label}
+          </div>
         </div>
+      )}
+    </div>
+  ))}
+</div>
+
       </Container>
     </section>
   );
