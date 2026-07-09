@@ -1,13 +1,20 @@
 export const images = {
-
-  verticalIntegratedFM: "/assests/integrated-fm.jpg",
-  verticalPropertyMgmt: "/assests/property-management.jpg",
-  verticalHardcoreRepair: "/assests/hardcore-repair.jpg",
-  verticalOfficeInterior: "/assests/office-interior.jpg",
-  repairSpotlight: "/assests/repair-spotlight.jpg",
-  propertySpotlight: "/assests/property-spotlight.jpg",
-  operateOne: "/assests/operate-one.jpg",
-  operateTwo: "/assests/operate-two.jpg",
-  operateThree: "/assests/operate-three.jpg",
-  techBanner: "/assests/tech-banner.jpg",
+ // homepage
+ herobanner: "/assests/homepage/hero-banner-img.jpg",
+ aboutBanner: "/assests/homepage/about-img.jpg",
+  verticalIntegratedFM: "/assests/homepage/integrated-fm.jpg",
+  verticalPropertyMgmt: "/assests/homepage/property-management.jpg",
+  verticalHardcoreRepair: "/assests/homepage/hardcore-repair.jpg",
+  verticalOfficeInterior: "/assests/homepage/office-interior.jpg",
+  repairSpotlight: "/assests/homepage/repair-spotlight.jpg",
+  propertySpotlight: "/assests/homepage/property-spotlight.jpg",
+  operateOne: "/assests/homepage/operate-one.jpg",
+  operateTwo: "/assests/homepage/operate-two.jpg",
+  operateThree: "/assests/homepage/operate-three.jpg",
+  techBanner: "/assests/homepage/tech-banner.jpg",
+  //company 
+  sisGroup: "/assests/company/sis-group.jpg",
+  board: "/assests/company/board.jpg",
+  team: "/assests/company/team.jpg",
+  news: "/assests/company/news.jpg",
 };

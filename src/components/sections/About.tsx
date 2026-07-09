@@ -69,7 +69,7 @@ export function About() {
 
             <div className="relative mt-10 aspect-[16/7] w-full overflow-hidden">
               <Image
-                src="/assests/about-img.jpg"
+                src={images.aboutBanner}
                 alt="Commercial towers managed by OneSIS"
                 fill
                 sizes="(min-width: 1024px) 1100px, 100vw"

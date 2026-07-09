@@ -15,22 +15,27 @@ export const nav = {
       label: "COMPANY",
       href: "#",
       children: [
-        { label: "About SIS Group", href: "#" },
-        { label: "About OneSIS", href: "#" },
-        { label: "Board", href: "#" },
-        { label: "Management", href: "#" },
-        { label: "Why OneSIS", href: "#" },
-        { label: "News", href: "#" },
-        { label: "Training", href: "#" },
+        { label: "About SIS Group", href: "/company/sis-group" },
+        { label: "About OneSIS", href: "/company/onesis" },
+        { label: "Board", href: "/company/board" },
+        { label: "Management", href: "/company/management" },
+        { label: "Why OneSIS", href: "/company/why-onesis" },
+        { label: "News", href: "/company/news" },
+        { label: "Training", href: "/company/training" },
       ],
     },
     {
       label: "SOLUTIONS",
       href: "#",
       children: [
-        { label: "Integrated FM", href: "#" },
-        { label: "Property Management", href: "#" },
-        { label: "Specialized Services", href: "#" },
+        { label: "Integrated FM", href: "/solutions/integrated-fm" },
+        { label: "Property Management",href: "/" },
+        { label: "Specialized Services", href: "/" },
+                // { label: "Property Management", href: "/solutions/property-management" },
+                //         { label: "Specialized Services", href: "/solutions/specialized-services" },
+
+
+
       ],
     },
     {

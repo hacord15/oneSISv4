@@ -95,13 +95,14 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { hero } from "@/lib/content";
+import { images } from "@/lib/images";
 
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-[var(--color-ink)]">
       <div className="absolute inset-0">
         <Image
-          src="/assests/hero-banner-img.jpg"
+          src={images.herobanner}
           alt="Modern office interior managed by OneSIS"
           fill
           priority
