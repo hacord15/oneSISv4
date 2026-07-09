@@ -20,4 +20,7 @@ export const images = {
   board: "/assests/company/board.jpg",
   team: "/assests/company/team.jpg",
   news: "/assests/company/news.jpg",
+  //contact
+  contactBanner: "/assests/homepage/contact-banner.jpg",
+
 };

@@ -44,6 +44,7 @@ import { Container } from "@/components/ui/Container";
 import { Header } from "@/components/sections/Header";
 import Image from "next/image";
 import { Footer } from "@/components/sections/Footer";
+import { images } from "@/lib/images";
 
 /* ---------------------------------- data ---------------------------------- */
 
@@ -201,7 +202,7 @@ export default function ContactPage() {
       {/* ---------------------------- HERO ---------------------------- */}
   <section className="relative overflow-hidden bg-[var(--color-ink)]">
   <Image
-    src="/assests/contact-banner.jpg"
+    src={images.contactBanner}
     alt="OneSIS managed facility"
     fill
     priority
