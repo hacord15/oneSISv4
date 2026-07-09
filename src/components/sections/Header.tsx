@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { nav } from "@/lib/content";
 import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
 
 export function Header() {
   return (
@@ -10,7 +11,7 @@ export function Header() {
         {/* Left Logo */}
         <Link href="/" className="shrink-0">
           <Image
-            src="/assests/logo_oneSIS.jpeg"
+            src={images.logo_oneSIS}
             alt="OneSIS Logo"
             width={180}
             height={60}
@@ -67,7 +68,7 @@ export function Header() {
         <div className="flex items-center gap-4">
   <Link href="https://sisindia.com/" target="_blank" rel="noreferrer" className="shrink-0">
             <Image
-              src="/assests/main-logo.png"
+              src={images.logo_SISGroup}
               alt="SIS Logo"
               width={180}
               height={60}

@@ -2,6 +2,8 @@ import { Container } from "@/components/ui/Container";
 import { footer } from "@/lib/content";
 import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
+
 
 export function Footer() {
   return (
@@ -10,7 +12,7 @@ export function Footer() {
         <div>
          <Link href="/" className="flex items-center gap-2.5 shrink-0">
   <Image
-    src="/assests/logo_oneSIS-removebg-preview.svg"
+    src={images.logo_oneSISFooter}
     alt="SIS Logo"
     width={180}
     height={60}

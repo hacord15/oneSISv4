@@ -1,5 +1,8 @@
 export const images = {
  // homepage
+ logo_oneSIS: "/assests/homepage/logo_oneSIS.jpeg",
+ logo_SISGroup: "/assests/homepage/main-logo.png",
+ logo_oneSISFooter: "/assests/homepage/logo_oneSIS-removebg-preview.svg",
  herobanner: "/assests/homepage/hero-banner-img.jpg",
  aboutBanner: "/assests/homepage/about-img.jpg",
   verticalIntegratedFM: "/assests/homepage/integrated-fm.jpg",
