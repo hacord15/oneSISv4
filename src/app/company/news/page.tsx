@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Tag } from "@/components/ui/Tag";
+import { images } from "@/lib/images";
 
 const mediaCoverage = [
   "Industry rankings",
@@ -46,6 +47,7 @@ export default function NewsPage() {
               News &amp; <span className="accent">Media</span>
             </>
           }
+          backgroundImage={images.newsBanner}
         />
 
         <section className="py-20">

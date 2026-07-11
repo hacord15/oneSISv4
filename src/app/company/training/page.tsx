@@ -1,24 +1,29 @@
+import Image from "next/image";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { images } from "@/lib/images";
 
 const programs = [
   {
     title: "Functional Training",
     description:
       "Cleaning best practices, PSARA security training (198 hrs vs 160 hrs required), first aid, fire prevention, emergency response, and workplace safety.",
+    image: images.repairSpotlight,
   },
   {
     title: "Technical Training",
     description:
       "Tools & equipment maintenance, in-house skill development for repair and maintenance operations.",
+    image: images.propertySpotlight,
   },
   {
     title: "Soft Skills Training",
     description:
       "Communication, gesture & posture, POSH compliance, ethics, personal hygiene, grooming standards.",
+    image: images.operateOne,
   },
 ];
 
@@ -46,6 +51,7 @@ export default function TrainingPage() {
               Training &amp; <span className="accent">Development</span>
             </>
           }
+          backgroundImage={images.trainingBanner}
         />
 
         <section className="py-20">
@@ -53,7 +59,16 @@ export default function TrainingPage() {
             <div className="grid grid-cols-1 divide-y divide-[var(--color-border)] border-t border-[var(--color-border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
               {programs.map((p) => (
                 <div key={p.title} className="px-6 py-10 sm:px-8">
-                  <h3 className="text-[16px] font-semibold text-[var(--color-ink)]">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden border border-[var(--color-border)]">
+                    <Image
+                      src={p.image}
+                      alt={p.title}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width: 640px) 33vw, 100vw"
+                    />
+                  </div>
+                  <h3 className="mt-6 text-[16px] font-semibold text-[var(--color-ink)]">
                     {p.title}
                   </h3>
                   <p className="mt-3 text-[13.5px] leading-relaxed text-[var(--color-body)]">
@@ -80,7 +95,16 @@ export default function TrainingPage() {
               </p>
             </div>
 
-            <div className="lg:col-span-5">
+            <div className="flex flex-col gap-6 lg:col-span-5">
+              <div className="relative aspect-[4/3] w-full overflow-hidden border border-[var(--color-border)]">
+                <Image
+                  src={images.verticalIntegratedFM}
+                  alt="M-Trainer digital training platform in use on site"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                />
+              </div>
               <div className="grid grid-cols-1 divide-y divide-[var(--color-border)] border border-[var(--color-border)] bg-white">
                 {platformFeatures.map((feature) => (
                   <div

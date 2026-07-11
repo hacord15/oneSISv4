@@ -29,10 +29,9 @@ export const nav = {
       href: "#",
       children: [
         { label: "Integrated FM", href: "/solutions/integrated-fm" },
-        { label: "Property Management",href: "/" },
-        { label: "Specialized Services", href: "/" },
-                // { label: "Property Management", href: "/solutions/property-management" },
-                //         { label: "Specialized Services", href: "/solutions/specialized-services" },
+        
+                { label: "Property Management", href: "/solutions/property-management" },
+                        { label: "Specialized Services", href: "/solutions/specialized-services" },
 
 
 
@@ -40,7 +39,7 @@ export const nav = {
     },
     {
       label: "CAREER",
-      href: "#",
+      href: "/career",
       children: [
         { label: "Why Work With Us", href: "#" },
         { label: "Current Openings", href: "#" },
@@ -49,11 +48,11 @@ export const nav = {
     },
     {
       label: "CONTACT US",
-      href: "/contact",
+      href: "#",
       children: [
-        { label: "Become a Partner", href: "#" },
-        { label: "Presence Map", href: "#" },
-        { label: "Contact Form", href: "#" },
+        { label: "Become a Partner", href: "/contact/partnership-form" },
+        { label: "Presence Map", href: "/contact/presence-map" },
+        { label: "Contact Form", href: "/contact/contact-form" },
       ],
     },
   ],
@@ -88,14 +87,14 @@ export const about = {
   eyebrow: "About OneSIS",
   heading: ["Reimagining", "Facilities for"],
   headingAccent: "Modern India",
-  body: "Founded in 2023–24 as a wholly owned subsidiary of SIS Ltd — India's #1 Business Services Group — OneSIS delivers comprehensive, technology-driven facility management. From property management and soft services to hardcore structural repairs and premium office fitouts. No sub-contracting. No excuses.",
+  body: "Born with a vision to redefine IFM, OneSIS combines the strength of the SIS Group's legacy with next-generation technology and operational excellence. Today, we deliver integrated facility management, workplace engineering, sustainability, and infrastructure solutions across India through a self-performed service model, through Group companies ensuring complete accountability, consistent quality, and measurable business outcomes.",
   badges: [
-    "100% Self-Delivered",
+    "Self-Delivered",
     "Technology-First",
-    "SIS Group Backed",
+    "SIS Group Backup",
     "SLA Guaranteed",
-    "Pan-India",
-    "Single Vendor",
+    "Pan-India Presence",
+    // "Single Vendor",
   ],
   facts: [
     { value: "2023", label: "Established, India" },
@@ -122,13 +121,13 @@ export const verticals = {
       index: "02",
       title: "Property Management",
       description:
-        "Residential & commercial property operations with full owner transparency and occupant satisfaction.",
-      tags: ["Residential", "Commercial", "Asset Ops"],
+        "Commercial & Residential  property operations with full owner occupant and transparency  satisfaction.",
+      tags: ["Residential", "Commercial", "Mall Management"],
       image: "verticalPropertyMgmt",
     },
     {
       index: "03",
-      title: "Hardcore Repair & Maintenance",
+      title: "Infrastructure Care",
       description:
         "Structural, civil & mechanical repair work by trained technicians — zero compromise on safety.",
       tags: ["Civil Works", "HVAC", "Electrical", "Plumbing"],
@@ -136,7 +135,7 @@ export const verticals = {
     },
     {
       index: "04",
-      title: "Office Interior Management",
+      title: "Corporate Interior Solutions",
       description:
         "Design-led, project-managed fitout solutions from concept to handover for corporate spaces.",
       tags: ["Design & Build", "Retrofitting", "PMC"],
@@ -157,21 +156,22 @@ export const hardcoreRepair = {
   eyebrow: "Core Activity",
   heading: "Hardcore Repair",
   headingAccent: "& Maintenance",
-  body: "We handle the critical, often-deferred maintenance work that other FM companies avoid — with specialist teams, heavy equipment and proven safety protocols.",
+  body: "Comprehensive infrastructure care encompassing engineering, preventive maintenance, repairs, refurbishment, MEP services, compliance, and lifecycle asset management.",
   checklist: [
-    "Structural & civil repair works",
+    
     "MEP — Mechanical, Electrical & Plumbing",
     "HVAC servicing & overhaul",
     "Waterproofing & facade restoration",
     "Predictive & preventive maintenance",
+    "Structural & civil repair works",
   ],
 };
 
 export const officeInterior = {
   eyebrow: "Fitout Division",
-  heading: "Office Interior",
+  heading: "Workplace Interior Solutions",
   headingAccent: "Management",
-  body: "From blank floor plates to fully operational workplaces — OneSIS manages every phase of office fitout with design expertise and project discipline.",
+  body: "Turnkey interiors, fit-outs, integrating innovative design, energy-efficient materials, and sustainable workplace solutions.",
   checklist: [
     "Concept design & space planning",
     "Design & Build (D&B) execution",
@@ -188,7 +188,7 @@ export const officeInterior = {
 };
 
 export const propertyManagement = {
-  eyebrow: "Property Division",
+  eyebrow: "Real Estate Management",
   heading: "End-to-End",
   headingAccent: "Property Management",
   body: "OneSIS delivers seamless property operations for residential complexes and commercial assets — combining technology-driven oversight, trained on-site teams, and 24/7 owner visibility dashboards.",
@@ -233,7 +233,7 @@ export const outcomes = {
       index: "04",
       title: "Enhance",
       description:
-        "Office experience and staff satisfaction through best-in-class practices and continuous service benchmarking.",
+        "Office experience and occupier satisfaction through best-in-class practices and continuous service benchmarking.",
     },
   ],
 };
@@ -286,8 +286,8 @@ export const accountability = {
 
 export const whereWeOperate = {
   heading: "Where We",
-  headingAccent: "Operate",
-  body: "Corporate campuses, tech parks, residential towers, hospitals, retail chains — if it's a facility, OneSIS can run it with full accountability and real-time visibility.",
+  headingAccent: "Create Impact",
+  body: "Across corporate campuses, tech parks, commercial towers, residential society, hospitals, and retail chains - Wherever you are in India, OneSIS serves full accountability and real-time visibility that drives performance.",
 };
 
 export const technology = {
@@ -334,7 +334,7 @@ export const cta = {
   heading: "Ready to",
   headingAccent: "Transform",
   headingTail: "Your Facility?",
-  body: "Talk to our team and discover how OneSIS can simplify your facility needs — FM, property management, repair & maintenance, and fitouts — under one roof, with guaranteed SLAs.",
+  body: "Talk to our team and discover how OneSIS can simplify your facility needs — FM, property management, asset Restoration & Maintenance and Workplace Interior Solutions — under one roof, with guaranteed SLAs.",
   primaryCta: "Contact Our Team",
   secondaryCta: "Download Profile",
   stats: [
@@ -347,7 +347,7 @@ export const cta = {
 
 export const footer = {
   description:
-    "A 100% SIS Group company delivering technology-driven, self-managed facility management, property management, hardcore repair & maintenance, and office interior management across India.",
+    "A SIS Group company delivering technology-driven, self-managed integrated facility management, real estate services, hardcore repair & maintenance, and office interior management across India.",
   badge: "Part of SIS Group — India's #1 FM Company",
   columns: [
     {
@@ -363,10 +363,10 @@ export const footer = {
     {
       title: "Solutions",
       links: [
-        "Integrated FM",
-        "Property Management",
-        "Repair & Maintenance",
-        "Office Fitouts",
+        "Integrated Facility Management",
+        "Real Estate Services",
+        "Asset Restoration & Maintenance",
+        "Workplace Interior Solutions",
         "Technology Platforms",
       ],
     },

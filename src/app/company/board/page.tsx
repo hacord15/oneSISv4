@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { ProfileCard } from "@/components/ui/ProfileCard";
+import { images } from "@/lib/images";
 
 // NOTE: Placeholder profiles for layout/demo purposes only.
 // Replace with real board member names, titles, photos, and bios before launch.
@@ -58,6 +59,7 @@ export default function BoardPage() {
             </>
           }
           description="Governance and leadership guiding OneSIS's strategy, accountability, and long-term growth."
+          backgroundImage={images.boardBanner}
         />
 
         <section className="py-20">

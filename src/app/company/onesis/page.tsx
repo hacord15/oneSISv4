@@ -4,6 +4,7 @@ import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Tag } from "@/components/ui/Tag";
+import { images } from "@/lib/images";
 
 const paragraphs = [
   "Founded in 2023–24, OneSIS is a 100% wholly owned subsidiary of SIS Ltd, established to deliver comprehensive, technology-driven, and self-managed facility management solutions.",
@@ -55,6 +56,7 @@ export default function AboutOneSISPage() {
               India
             </>
           }
+          backgroundImage={images.aboutOneSIS}
         />
 
         <section className="py-20">
@@ -107,7 +109,7 @@ export default function AboutOneSISPage() {
               Curious what sets OneSIS apart from a fragmented, multi-vendor approach?
             </p>
             <Link
-              href="/why-onesis"
+              href="/company/why-onesis"
               className="inline-flex items-center gap-2 bg-[var(--color-brand)] px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-white transition-colors hover:bg-[var(--color-brand-dark)]"
             >
               Why OneSIS

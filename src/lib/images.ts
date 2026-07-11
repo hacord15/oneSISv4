@@ -20,6 +20,21 @@ export const images = {
   board: "/assests/company/board.jpg",
   team: "/assests/company/team.jpg",
   news: "/assests/company/news.jpg",
+  //Company Banner
+  aboutOneSIS:"/assests/company/About_OneSIS_Banner.png",
+  aboutSISGroup:"/assests/company/About_SIS_Group_Banner.png",
+  boardBanner:"/assests/company/Board_Banner.png",
+  managementTeamBanner:"/assests/company/Management_Team_Banner.png",
+  whyOneSISBanner:"/assests/company/Why_OneSis_Banner.png",
+  newsBanner:"/assests/company/News_Banner.png",
+  trainingBanner:"/assests/company/Traning_devlopment_Banner.png",
+
+  // Company Training & Development
+  trainingFunctional: "/images/training/functional-training.jpg",
+trainingTechnical: "/images/training/technical-training.jpg",
+trainingSoftSkills: "/images/training/soft-skills-training.jpg",
+mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
+
   //contact
   contactBanner: "/assests/homepage/contact-banner.jpg",
 

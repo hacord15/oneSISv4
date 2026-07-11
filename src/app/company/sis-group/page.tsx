@@ -4,6 +4,7 @@ import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { images } from "@/lib/images";
 
 const keyStats = [
   { value: "₹16,000 Cr", label: "Revenue" },
@@ -49,6 +50,7 @@ export default function SISGroupPage() {
             </>
           }
           description="SIS Group is India's largest listed security and business services enterprise, operating across 16 group companies with a pan-India and international presence."
+          backgroundImage={images.aboutSISGroup}
         />
 
         {/* Rankings + revenue */}

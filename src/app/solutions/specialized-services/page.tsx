@@ -1,14 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { CategoryCard } from "@/components/ui/CategoryCard";
 
+// Stock placeholders (free Unsplash License) – replace with real photography
 const specializedServices = [
   {
     title: "CapEx & Civil Upgradation",
+    image:
+      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Construction workers on a building site",
     items: [
       "Structural Strengthening",
       "Waterproofing",
@@ -20,6 +24,9 @@ const specializedServices = [
   },
   {
     title: "Retrofitting Services",
+    image:
+      "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "HVAC technician inspecting mechanical equipment",
     items: [
       "MEP System Replacement",
       "BMS & EMS Integration",
@@ -30,6 +37,9 @@ const specializedServices = [
   },
   {
     title: "Smart Maintenance",
+    image:
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Robotic arm performing maintenance",
     items: [
       "Robotic HVAC Duct Cleaning",
       "Thermography",
@@ -40,6 +50,9 @@ const specializedServices = [
   },
   {
     title: "Project Management Consultancy (PMC)",
+    image:
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Project manager reviewing blueprints with team",
     items: [
       "Project Planning",
       "Cost Estimation",
@@ -51,6 +64,9 @@ const specializedServices = [
   },
   {
     title: "Design & Build",
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Architect working on building plans",
     items: [
       "Architectural Design",
       "Interior Design",
@@ -62,6 +78,9 @@ const specializedServices = [
   },
   {
     title: "Renovation & Refurbishment",
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Modern renovated interior with new furniture",
     items: [
       "Lobby Modernization",
       "Clubhouse Renovation",
@@ -105,11 +124,36 @@ export default function SpecializedServicesPage() {
 
             <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {specializedServices.map((service) => (
-                <CategoryCard
+                <div
                   key={service.title}
-                  title={service.title}
-                  items={service.items}
-                />
+                  className="group overflow-hidden rounded-2xl border border-[var(--color-border)] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div className="relative h-44 w-full overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.imageAlt}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover transition duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-[16px] font-semibold text-[var(--color-ink)]">
+                      {service.title}
+                    </h3>
+                    <ul className="mt-4 flex flex-col gap-2.5">
+                      {service.items.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-3 text-[13px] text-[var(--color-body)]"
+                        >
+                          <span className="mt-2 h-px w-3 shrink-0 bg-[var(--color-brand)]" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               ))}
             </div>
           </Container>

@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { ProfileCard } from "@/components/ui/ProfileCard";
+import { images } from "@/lib/images";
 
 // NOTE: Placeholder profiles for layout/demo purposes only.
 // Replace with real management team names, titles, photos, and bios before launch.
@@ -64,6 +65,7 @@ export default function ManagementPage() {
             </>
           }
           description="The leadership team responsible for OneSIS's day-to-day operations, technology, and client accountability."
+          backgroundImage={images.managementTeamBanner}
         />
 
         <section className="py-20">
