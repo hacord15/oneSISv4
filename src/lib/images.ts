@@ -22,7 +22,7 @@ export const images = {
   news: "/assests/company/news.jpg",
   //Company Banner
   aboutOneSIS:"/assests/company/About_OneSIS_Banner.png",
-  aboutSISGroup:"/assests/company/About_SIS_Group_Banner.png",
+  aboutSISGroup:"/assests/company/About_SIS_group_Banner.png",
   boardBanner:"/assests/company/Board_Banner.png",
   managementTeamBanner:"/assests/company/Management_Team_Banner.png",
   whyOneSISBanner:"/assests/company/Why_OneSis_Banner.png",
