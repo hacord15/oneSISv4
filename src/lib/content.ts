@@ -141,7 +141,7 @@ export const verticals = {
       title: "Infrastructure Care",
       description:
         "Structural, civil & mechanical repair work by trained technicians — zero compromise on safety.",
-      tags: ["Engineering and TEchnical Services", "Civil and Building Maintenance ", "Asset Care and Life cycle Management", "Infrastructure Reliability ","Sustainability services"],
+      tags: ["Infrastructure Reliability ", "Sustainability services","Asset Care"],
       image: "verticalHardcoreRepair",
     },
     {
@@ -203,7 +203,7 @@ export const corporateInterior = {
   headingAccent: "Care",
   body: "Structural, civil & mechanical repair work by trained technicians — zero compromise on safety.",
   checklist: [
-    "Engineering and TEchnical Services",
+    "Engineering and Technical Services",
     "Civil and Building Maintenance",
     "Asset Care and Life cycle Management",
     "Infrastructure Reliability ",
