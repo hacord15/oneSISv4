@@ -203,10 +203,11 @@ export const corporateInterior = {
   headingAccent: "Care",
   body: "Structural, civil & mechanical repair work by trained technicians — zero compromise on safety.",
   checklist: [
-    "Civil Works",
-    "HVAC",
-    "Electrical",
-    "Plumbing",
+    "Engineering and TEchnical Services",
+    "Civil and Building Maintenance",
+    "Asset Care and Life cycle Management",
+    "Infrastructure Reliability ",
+    "Sustainability services"
   ],
   cta: "Explore Infrastructure Care",
   imageCaption: "Infrastructure Care",
