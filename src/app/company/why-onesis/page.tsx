@@ -45,7 +45,7 @@ const advantages = [
   },
   {
     index: "05",
-    title: "Self-Delivered Services",
+    title: "Group Companies Managed Services",
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Team of workers in a facility",

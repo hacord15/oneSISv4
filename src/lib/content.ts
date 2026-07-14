@@ -5,12 +5,12 @@
 export const nav = {
   logo: "OneSIS",
   parentBadge: "SIS Group Co.",
-  cta: "Download Company Profile",
+  cta: "Company Profile",
   links: [
-    {
-      label: "HOME",
-      href: "/",
-    },
+    // {
+    //   label: "HOME",
+    //   href: "/",
+    // },
     {
       label: "COMPANY",
       href: "#",
@@ -18,7 +18,7 @@ export const nav = {
         { label: "About SIS Group", href: "/company/sis-group" },
         { label: "About OneSIS", href: "/company/onesis" },
         { label: "Board", href: "/company/board" },
-        { label: "Management", href: "/company/management" },
+        { label: "Management Team", href: "/company/management" },
         { label: "Why OneSIS", href: "/company/why-onesis" },
         { label: "News", href: "/company/news" },
         { label: "Training", href: "/company/training" },
@@ -28,13 +28,20 @@ export const nav = {
       label: "SOLUTIONS",
       href: "#",
       children: [
-        { label: "Integrated FM", href: "/solutions/integrated-fm" },
-        
-                { label: "Property Management", href: "/solutions/property-management" },
-                        { label: "Specialized Services", href: "/solutions/specialized-services" },
+        { label: "Integrated Facility Management ", href: "/solutions/integrated-fm" },
 
-
-
+        {
+          label: "Property Management",
+          href: "/solutions/property-management",
+        },
+        {
+          label: "Specialized Services",
+          href: "/solutions/specialized-services",
+        },
+        {
+          label: "Corporate Interior Solutions",
+          href: "",
+        },
       ],
     },
     {
@@ -42,8 +49,8 @@ export const nav = {
       href: "/career",
       children: [
         { label: "Why Work With Us", href: "#" },
-        { label: "Current Openings", href: "#" },
-        { label: "Employee Benefits", href: "#" },
+        { label: "Current Openings", href: "/career/current-openings" },
+        { label: "Employee Benefits", href: "/career/employee-benefits" },
       ],
     },
     {
@@ -69,9 +76,9 @@ export const anchorStrip = [
 
 export const hero = {
   eyebrow: "One Vision, Every Solution",
-  heading: ["Your One-Stop", "Partner for "],
+  heading: ["Reimagining Workplace Solutions", " for Modern India. "],
   headingAccent: "Integrated Facility Management",
-  body: "Technology-driven, fully self-delivered facility solutions — FM, property management, hardcore repair & maintenance, and office fitouts — backed by SIS Group's ₹20,059 Cr enterprise strength.",
+  body: "Technology-driven, fully Group Companies Managed facility solutions — FM, property management, hardcore repair & maintenance, and office fitouts — backed by SIS Group's ₹20,059 Cr enterprise strength.",
   primaryCta: "Explore Solutions",
   secondaryCta: "Download Company Profile",
   scrollLabel: "Scroll to Explore",
@@ -89,7 +96,7 @@ export const about = {
   headingAccent: "Modern India",
   body: "Born with a vision to redefine IFM, OneSIS combines the strength of the SIS Group's legacy with next-generation technology and operational excellence. Today, we deliver integrated facility management, workplace engineering, sustainability, and infrastructure solutions across India through a self-performed service model, through Group companies ensuring complete accountability, consistent quality, and measurable business outcomes.",
   badges: [
-    "Self-Delivered",
+    "Group Companies Managed",
     "Technology-First",
     "SIS Group Backup",
     "SLA Guaranteed",
@@ -99,6 +106,10 @@ export const about = {
   facts: [
     { value: "2023", label: "Established, India" },
     { value: "100%", label: "SIS Ltd Subsidiary" },
+    { value: "₹20,059 Cr", label: "SIS Group Revenue" },
+    { value: "3.5 Lakh+", label: "SIS Group Employees" },
+    { value: "16", label: "SIS Group Companies" },
+    { value: "368", label: "SIS Group Offices" },
   ],
   imageCaption: "Residential & Commercial",
 };
@@ -122,7 +133,7 @@ export const verticals = {
       title: "Property Management",
       description:
         "Commercial & Residential  property operations with full owner occupant and transparency  satisfaction.",
-      tags: ["Residential", "Commercial", "Mall Management"],
+      tags: ["Commercial","Residential", "Mall Management"],
       image: "verticalPropertyMgmt",
     },
     {
@@ -158,7 +169,6 @@ export const hardcoreRepair = {
   headingAccent: "& Maintenance",
   body: "Comprehensive infrastructure care encompassing engineering, preventive maintenance, repairs, refurbishment, MEP services, compliance, and lifecycle asset management.",
   checklist: [
-    
     "MEP — Mechanical, Electrical & Plumbing",
     "HVAC servicing & overhaul",
     "Waterproofing & facade restoration",
@@ -185,6 +195,17 @@ export const officeInterior = {
     { value: "630+", label: "Districts" },
     { value: "368", label: "Offices" },
   ],
+};
+
+export const corporateInterior = {
+  eyebrow: "Fitout Division",
+  heading: "Corporate",
+  headingAccent: "Interior Solutions",
+  body: "Design-led, project-managed fitout solutions from concept to handover for corporate spaces.",
+  checklist: ["Design & Build", "Retrofitting", "PMC"],
+  cta: "Explore Interior Solutions",
+  imageCaption: "Corporate Interiors",
+  imageSubcaption: "Concept-to-Handover Fitouts",
 };
 
 export const propertyManagement = {
@@ -215,7 +236,7 @@ export const outcomes = {
       index: "01",
       title: "Transform",
       description:
-        "Self-delivered and digitised last-mile operations across all service lines — driving operational excellence at scale.",
+        "Group Companies Managed and digitised last-mile operations across all service lines — driving operational excellence at scale.",
     },
     {
       index: "02",

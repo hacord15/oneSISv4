@@ -20,7 +20,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "OneSIS | Manage Every Facility. One Contract.",
   description:
-    "Technology-driven, fully self-delivered facility solutions — FM, property management, hardcore repair & maintenance, and office fitouts — backed by SIS Group's ₹20,059 Cr enterprise strength.",
+    "Technology-driven, fully Group Companies Managed facility solutions — FM, property management, hardcore repair & maintenance, and office fitouts — backed by SIS Group's ₹20,059 Cr enterprise strength.",
 };
 
 export default function RootLayout({

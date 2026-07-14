@@ -4,6 +4,7 @@ import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { CareerSubNav } from "@/components/ui/CareerSubNav";
 
 const perks = [
   {
@@ -53,6 +54,8 @@ export default function CareerPage() {
           }
           description="At OneSIS, we believe our people are our most important asset. As part of the SIS Group — India's largest security and facility management enterprise with 3.5 lakh employees — we offer career opportunities, continuous learning, and a culture built on safety, dignity, and equal opportunity."
         />
+
+        <CareerSubNav />
 
         {/* Why work with us */}
         <section className="py-20">

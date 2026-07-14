@@ -31,7 +31,7 @@ const highlights = [
   },
   {
     index: "04",
-    title: "Self-Delivered",
+    title: "Group Companies Managed",
     description: "Services delivered directly — not subcontracted — ensuring quality.",
   },
 ];

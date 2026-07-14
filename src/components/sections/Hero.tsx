@@ -141,20 +141,20 @@ export function Hero() {
             </span>
           </h1>
 
-          <p className="mt-7 max-w-md text-[15px] leading-relaxed text-white/70">
+          {/* <p className="mt-7 max-w-md text-[15px] leading-relaxed text-white/70">
             {hero.body}
-          </p>
+          </p> */}
 
           <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4">
             <Button href="#verticals" variant="primary" icon>
               {hero.primaryCta}
             </Button>
             
-            <a  href="#contact"
+            {/* <a  href="#contact"
               className="text-[14px] text-white/80 underline underline-offset-4 decoration-white/40 transition-colors hover:text-white hover:decoration-white"
             >
               {hero.secondaryCta}
-            </a>
+            </a> */}
           </div>
         </div>
 

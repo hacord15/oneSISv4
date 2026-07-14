@@ -4,7 +4,7 @@ export const images = {
  logo_SISGroup: "/assests/homepage/main-logo.png",
  logo_oneSISFooter: "/assests/homepage/logo_oneSIS-removebg-preview.svg",
  herobanner: "/assests/homepage/hero-banner-img.jpg",
- aboutBanner: "/assests/homepage/about-img.jpg",
+ aboutBanner: "/assests/homepage/about-img.png",
   verticalIntegratedFM: "/assests/homepage/integrated-fm.jpg",
   verticalPropertyMgmt: "/assests/homepage/property-management.jpg",
   verticalHardcoreRepair: "/assests/homepage/hardcore-repair.jpg",

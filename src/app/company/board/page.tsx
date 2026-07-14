@@ -38,7 +38,7 @@ const boardMembers = [
     photo: "https://picsum.photos/seed/onesis-board-5/600/750",
     name: "Arvind Kapoor",
     title: "Executive Director",
-    bio: "Oversees group-wide technology and operations strategy, with a background in scaling self-delivered service models nationally.",
+    bio: "Oversees group-wide technology and operations strategy, with a background in scaling Group Companies Managed service models nationally.",
   },
 ];
 

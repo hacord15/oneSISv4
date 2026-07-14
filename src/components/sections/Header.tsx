@@ -66,7 +66,35 @@ export function Header() {
 
         {/* Right Section */}
         <div className="flex items-center gap-4">
-  <Link href="https://sisindia.com/" target="_blank" rel="noreferrer" className="shrink-0">
+
+         
+          <Link
+            href="#DownloadCompanyProfile"
+            className="inline-flex items-center gap-2 rounded bg-[var(--color-brand)] px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-[var(--color-brand-dark)]"
+          >
+             <svg
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              />
+            </svg>
+            {nav.cta}
+            
+          </Link>
+
+          <Link
+            href="https://sisindia.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="shrink-0"
+          >
             <Image
               src={images.logo_SISGroup}
               alt="SIS Logo"
@@ -76,17 +104,6 @@ export function Header() {
               priority
             />
           </Link>
-
-           <Link
-            href="#DownloadCompanyProfile"
-            className="inline-flex items-center rounded bg-[var(--color-brand)] px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-[var(--color-brand-dark)]"
-          >
-            {nav.cta}
-          </Link>
-
-        
-
-         
         </div>
       </Container>
     </header>

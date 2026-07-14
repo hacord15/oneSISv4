@@ -12,6 +12,7 @@ import { WhereWeOperate } from "@/components/sections/WhereWeOperate";
 import { TechPlatforms } from "@/components/sections/TechPlatforms";
 import { CTA } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
+import { CorporateInteriorSolutions } from "@/components/sections/CorporateInteriorSolutions";
 
 export default function Home() {
   return (
@@ -22,9 +23,10 @@ export default function Home() {
         <AnchorStrip />
         <About />
         <CoreVerticals />
-        <StatsStrip />
+        {/* <StatsStrip /> */}
         <RepairAndInterior />
         <PropertyManagement />
+        <CorporateInteriorSolutions />
         <FourOutcomes />
         <Accountability />
         <WhereWeOperate />
