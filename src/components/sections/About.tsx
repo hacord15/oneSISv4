@@ -34,8 +34,8 @@ export function About() {
           <div>
             <h2 className="font-display text-[2.25rem] leading-[1.12] text-[var(--color-ink)] sm:text-[2.75rem]">
               {about.heading[0]}
-              <br />
-              {about.heading[1]}
+              {/* <br />
+              {about.heading[1]} */}
               <br />
               <span className="accent">{about.headingAccent}</span>
             </h2>

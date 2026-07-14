@@ -35,7 +35,7 @@ export const nav = {
           href: "/solutions/property-management",
         },
         {
-          label: "Specialized Services",
+          label: "Infrastructure Care",
           href: "/solutions/specialized-services",
         },
         {
@@ -92,7 +92,7 @@ export const hero = {
 
 export const about = {
   eyebrow: "About OneSIS",
-  heading: ["Reimagining", "Facilities for"],
+  heading: ["Reimagining Facilities for", ""],
   headingAccent: "Modern India",
   body: "Born with a vision to redefine IFM, OneSIS combines the strength of the SIS Group's legacy with next-generation technology and operational excellence. Today, we deliver integrated facility management, workplace engineering, sustainability, and infrastructure solutions across India through a self-performed service model, through Group companies ensuring complete accountability, consistent quality, and measurable business outcomes.",
   badges: [
@@ -107,9 +107,9 @@ export const about = {
     { value: "2023", label: "Established, India" },
     { value: "100%", label: "SIS Ltd Subsidiary" },
     { value: "₹20,059 Cr", label: "SIS Group Revenue" },
-    { value: "3.5 Lakh+", label: "SIS Group Employees" },
+    { value: "3.5 Lakh", label: "SIS Group Employees" },
     { value: "16", label: "SIS Group Companies" },
-    { value: "368", label: "SIS Group Offices" },
+    { value: "29", label: "States" },
   ],
   imageCaption: "Residential & Commercial",
 };
