@@ -141,7 +141,7 @@ export const verticals = {
       title: "Infrastructure Care",
       description:
         "Structural, civil & mechanical repair work by trained technicians — zero compromise on safety.",
-      tags: ["Civil Works", "HVAC", "Electrical", "Plumbing"],
+      tags: ["Engineering and TEchnical Services", "Civil and Building Maintenance ", "Asset Care and Life cycle Management", "Infrastructure Reliability ","Sustainability services"],
       image: "verticalHardcoreRepair",
     },
     {

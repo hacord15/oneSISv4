@@ -16,6 +16,12 @@ const boardMembers = [
   title: "Group Managing Director", 
   bio: "Over 20 years transforming SIS Limited into a multinational security leader, championing technology integration, cross-border acquisitions, and large-scale formal employment across the Asia-Pacific region.", 
   },
+  {
+  photo: images.ceo,
+  name: "Dhiraj Singh",
+  title: "Chief Executive Officer",
+  bio: "An IIT Bombay graduate and veteran business leader with over 25 years of experience leading multi-thousand crore enterprises, driving massive operational growth, technology-backed security solutions, and people-first workplace culture across SIS Group Enterprises.",
+},
   // {
   //   photo: "https://picsum.photos/seed/onesis-board-2/600/750",
   //   name: "Anjali Sharma",

@@ -45,6 +45,7 @@ mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
 
   //board
   chairman: "/assests/board/riturajSir.jpg",
+  ceo: "/assests/board/dheerajSir.jpg",
 
 
 };
