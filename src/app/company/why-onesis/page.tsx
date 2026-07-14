@@ -28,8 +28,7 @@ const advantages = [
   {
     index: "03",
     title: "3-Step Compliance Verification",
-    image:
-      "https://images.unsplash.com/photo-1595306394931-b35768661692?auto=format&fit=crop&w=1200&q=80",
+    image: images.StepComplianceVerification,
     imageAlt: "Compliance documents and magnifying glass",
     description:
       "Rigorous compliance checks across labour, statutory, and EHS norms save valuable time for HR and compliance teams.",

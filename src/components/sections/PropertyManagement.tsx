@@ -31,7 +31,7 @@ export function PropertyManagement() {
                 </li>
               ))}
             </ul>
-            <TextLink href="#contact" className="mt-7">
+            <TextLink href="/solutions/property-management" className="mt-7">
               {propertyManagement.cta}
             </TextLink>
           </div>

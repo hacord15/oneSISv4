@@ -131,7 +131,8 @@ export function Hero() {
   </span>
 </div>
 
-          <h1 className="font-display text-[2.75rem] leading-[1.08] text-white sm:text-[3.5rem] lg:text-[4.25rem]">
+          {/* <h1 className="font-display text-[2.75rem] leading-[1.08] text-white sm:text-[3.5rem] lg:text-[4.25rem]"> */}
+          <h1 className="font-display text-[2.25rem] leading-[1.1] text-white sm:text-[2.75rem] lg:text-[3.5rem]">
             {hero.heading[0]}
             <br />
             {hero.heading[1]}

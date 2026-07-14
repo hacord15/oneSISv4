@@ -38,4 +38,9 @@ mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
   //contact
   contactBanner: "/assests/homepage/contact-banner.jpg",
 
+
+  //why one-sis
+  StepComplianceVerification: "/assests/why-oneSIS/onesis.png",
+
+
 };

@@ -198,16 +198,20 @@ export const officeInterior = {
 };
 
 export const corporateInterior = {
-  eyebrow: "Fitout Division",
-  heading: "Corporate",
-  headingAccent: "Interior Solutions",
-  body: "Design-led, project-managed fitout solutions from concept to handover for corporate spaces.",
-  checklist: ["Design & Build", "Retrofitting", "PMC"],
-  cta: "Explore Interior Solutions",
-  imageCaption: "Corporate Interiors",
-  imageSubcaption: "Concept-to-Handover Fitouts",
+  eyebrow: "Infrastructure Care",
+  heading: "Infrastructure",
+  headingAccent: "Care",
+  body: "Structural, civil & mechanical repair work by trained technicians — zero compromise on safety.",
+  checklist: [
+    "Civil Works",
+    "HVAC",
+    "Electrical",
+    "Plumbing",
+  ],
+  cta: "Explore Infrastructure Care",
+  imageCaption: "Infrastructure Care",
+  imageSubcaption: "Structural, Civil & Mechanical Services",
 };
-
 export const propertyManagement = {
   eyebrow: "Real Estate Management",
   heading: "End-to-End",

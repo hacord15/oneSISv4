@@ -121,8 +121,8 @@ export function RepairAndInterior() {
               </li>
             ))}
           </ul>
-          <TextLink href="#contact" className="mt-7">
-            Explore Property Management
+          <TextLink href="/solutions/integrated-fm" className="mt-7">
+            Explore Facility Repair & Maintenance
           </TextLink>
         </div>
       </div>
@@ -150,8 +150,8 @@ export function RepairAndInterior() {
               </li>
             ))}
           </ul>
-          <TextLink href="#contact" className="mt-7">
-            Explore Property Management
+          <TextLink href="/" className="mt-7">
+            Explore Interior Fitout & Management
           </TextLink>
 
           {/* <div className="mt-8 grid grid-cols-3 gap-3">
