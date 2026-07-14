@@ -165,8 +165,8 @@ export const statsStrip = [
 
 export const hardcoreRepair = {
   eyebrow: "Core Activity",
-  heading: "Hardcore Repair",
-  headingAccent: "& Maintenance",
+  heading: "Integrated Facility ",
+  headingAccent: "Management",
   body: "Comprehensive infrastructure care encompassing engineering, preventive maintenance, repairs, refurbishment, MEP services, compliance, and lifecycle asset management.",
   checklist: [
     "MEP — Mechanical, Electrical & Plumbing",
