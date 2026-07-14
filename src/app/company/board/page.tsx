@@ -11,35 +11,35 @@ import { images } from "@/lib/images";
 // Replace with real board member names, titles, photos, and bios before launch.
 const boardMembers = [
   {
-    photo: "https://picsum.photos/seed/onesis-board-1/600/750",
-    name: "Rajeev Malhotra",
-    title: "Chairman & Managing Director",
-    bio: "Over 25 years leading business services and security enterprises across India, with a focus on governance, scale, and long-term client trust.",
+    photo: images.chairman,
+     name: "Rituraj Kishore Sinha", 
+  title: "Group Managing Director", 
+  bio: "Over 20 years transforming SIS Limited into a multinational security leader, championing technology integration, cross-border acquisitions, and large-scale formal employment across the Asia-Pacific region.", 
   },
-  {
-    photo: "https://picsum.photos/seed/onesis-board-2/600/750",
-    name: "Anjali Sharma",
-    title: "Independent Director",
-    bio: "Brings two decades of experience in corporate governance and risk management, having served on the boards of several listed Indian enterprises.",
-  },
-  {
-    photo: "https://picsum.photos/seed/onesis-board-3/600/750",
-    name: "Vikram Nair",
-    title: "Non-Executive Director",
-    bio: "Former operations leader in the infrastructure sector, advising on facility management strategy and pan-India delivery networks.",
-  },
-  {
-    photo: "https://picsum.photos/seed/onesis-board-4/600/750",
-    name: "Sunita Rao",
-    title: "Independent Director, Finance",
-    bio: "Chartered accountant with deep expertise in financial governance, statutory compliance, and audit oversight for large service organizations.",
-  },
-  {
-    photo: "https://picsum.photos/seed/onesis-board-5/600/750",
-    name: "Arvind Kapoor",
-    title: "Executive Director",
-    bio: "Oversees group-wide technology and operations strategy, with a background in scaling Group Companies Managed service models nationally.",
-  },
+  // {
+  //   photo: "https://picsum.photos/seed/onesis-board-2/600/750",
+  //   name: "Anjali Sharma",
+  //   title: "Independent Director",
+  //   bio: "Brings two decades of experience in corporate governance and risk management, having served on the boards of several listed Indian enterprises.",
+  // },
+  // {
+  //   photo: "https://picsum.photos/seed/onesis-board-3/600/750",
+  //   name: "Vikram Nair",
+  //   title: "Non-Executive Director",
+  //   bio: "Former operations leader in the infrastructure sector, advising on facility management strategy and pan-India delivery networks.",
+  // },
+  // {
+  //   photo: "https://picsum.photos/seed/onesis-board-4/600/750",
+  //   name: "Sunita Rao",
+  //   title: "Independent Director, Finance",
+  //   bio: "Chartered accountant with deep expertise in financial governance, statutory compliance, and audit oversight for large service organizations.",
+  // },
+  // {
+  //   photo: "https://picsum.photos/seed/onesis-board-5/600/750",
+  //   name: "Arvind Kapoor",
+  //   title: "Executive Director",
+  //   bio: "Oversees group-wide technology and operations strategy, with a background in scaling Group Companies Managed service models nationally.",
+  // },
 ];
 
 export const metadata = {

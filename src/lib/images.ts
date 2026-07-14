@@ -43,4 +43,8 @@ mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
   StepComplianceVerification: "/assests/why-oneSIS/onesis.png",
 
 
+  //board
+  chairman: "/assests/board/riturajSir.jpg",
+
+
 };
