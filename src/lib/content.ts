@@ -13,7 +13,7 @@ export const nav = {
     // },
     {
       label: "COMPANY",
-      href: "#",
+      href: "/company/onesis",
       children: [
         { label: "About SIS Group", href: "/company/sis-group" },
         { label: "About OneSIS", href: "/company/onesis" },
@@ -46,7 +46,7 @@ export const nav = {
     },
     {
       label: "CAREER",
-      href: "#",
+      href: "/career/current-openings",
       children: [
         { label: "Why Work With Us", href: "/career/why-work-with-us" },
         { label: "Current Openings", href: "/career/current-openings" },
@@ -55,7 +55,7 @@ export const nav = {
     },
     {
       label: "CONTACT US",
-      href: "#",
+      href: "/contact/contact-form",
       children: [
         { label: "Become a Partner", href: "/contact/partnership-form" },
         { label: "Presence Map", href: "/contact/presence-map" },
