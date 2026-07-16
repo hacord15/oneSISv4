@@ -110,8 +110,7 @@ export function Hero() {
           className="object-cover"
         />
         {/* Left dark -> right light */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-ink)] via-[var(--color-ink)]/65 to-[var(--color-ink)]/10" />
-        {/* Bottom fade for scroll indicator area */}
+<div className="absolute inset-0 bg-gradient-to-r from-[var(--color-ink)]/55 via-[var(--color-ink)]/25 to-transparent" />        {/* Bottom fade for scroll indicator area */}
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/60 via-transparent to-transparent" />
       </div>
 
