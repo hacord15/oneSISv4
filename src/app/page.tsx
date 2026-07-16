@@ -5,7 +5,7 @@ import { About } from "@/components/sections/About";
 import { CoreVerticals } from "@/components/sections/CoreVerticals";
 import { StatsStrip } from "@/components/sections/StatsStrip";
 import { RepairAndInterior } from "@/components/sections/RepairAndInterior";
-import { PropertyManagement } from "@/components/sections/PropertyManagement";
+import { OfficeInterior } from "@/components/sections/OfficeInterior";
 import { FourOutcomes } from "@/components/sections/FourOutcomes";
 import { Accountability } from "@/components/sections/Accountability";
 import { WhereWeOperate } from "@/components/sections/WhereWeOperate";
@@ -25,8 +25,9 @@ export default function Home() {
         <CoreVerticals />
         {/* <StatsStrip /> */}
         <RepairAndInterior />
-        <PropertyManagement />
+       
         <CorporateInteriorSolutions />
+         <OfficeInterior/>
         <FourOutcomes />
         <Accountability />
         <WhereWeOperate />

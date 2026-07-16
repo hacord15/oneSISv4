@@ -6,7 +6,6 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
-// Stock placeholders (free Unsplash License) – replace with real photography
 const specializedServices = [
   {
     title: "CapEx & Civil Upgradation",

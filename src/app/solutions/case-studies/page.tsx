@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Tag } from "@/components/ui/Tag";
+import { images } from "@/lib/images";
 
 // Stock placeholders – replace with real project photography
 const caseStudies = [
@@ -12,8 +13,7 @@ const caseStudies = [
     name: "DTC Southern Heights",
     location: "Kolkata",
     category: "Property Management",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    image: images.propertymanagement,
     imageAlt: "Modern commercial building facade",
     description:
       "Structural façade restoration across approximately 98,247 sq. ft. of commercial development, completed with minimal disruption to daily operations while ensuring safety and quality compliance.",
@@ -22,8 +22,7 @@ const caseStudies = [
     name: "United Beverages",
     location: "Bangalore",
     category: "Design & Build",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+    image: images.specializedcivil,
     imageAlt: "Modern laboratory interior with workstations",
     description:
       "Complete transformation of an R&D laboratory, including modular furniture installation, acoustic treatments, lacquered glass finishes, and premium interior fit-outs.",
@@ -32,8 +31,7 @@ const caseStudies = [
     name: "Elite Garden Vista",
     location: "Kolkata",
     category: "Property Management",
-    image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80",
+    image: images.ifmtechnical,
     imageAlt: "High-rise residential towers under restoration",
     description:
       "High-rise residential façade restoration involving 22 residential towers. Scope included structural analysis, repair works, and colour consistency improvements.",
@@ -42,8 +40,7 @@ const caseStudies = [
     name: "Prozone Palms",
     location: "Nagpur",
     category: "Specialized Civil",
-    image:
-      "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1200&q=80",
+    image: images.pmc,
     imageAlt: "Parking garage with new flooring",
     description:
       "Execution of phased parking facility upgrades, high-performance flooring systems, waterproofing treatments, navigation marking, and zero-downtime implementation.",
@@ -52,8 +49,7 @@ const caseStudies = [
     name: "Digit Insurance",
     location: "Pan India",
     category: "IFM / Technical",
-    image:
-      "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1200&q=80",
+    image: images.specializedtechnicalservices,
     imageAlt: "HVAC system and ductwork",
     description:
       "Comprehensive HVAC audits and CAMC implementation, including insulation upgrades, VFD reconfiguration, valve replacement, and energy efficiency improvements across multiple locations.",
@@ -61,8 +57,7 @@ const caseStudies = [
   {
     name: "Urban Square Mall",
     category: "PMC",
-    image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+    image: images.propertymanagement,
     imageAlt: "Modern mall interior with escalators",
     description:
       "Managed common area renovations, washroom refurbishment, lobby improvements, multi-contractor coordination, quality assurance, and successful project handover.",

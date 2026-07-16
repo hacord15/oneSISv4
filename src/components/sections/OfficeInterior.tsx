@@ -2,26 +2,26 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TextLink } from "@/components/ui/TextLink";
-import { propertyManagement } from "@/lib/content";
+import { officeInterior } from "@/lib/content";
 import { images } from "@/lib/images";
 
-export function PropertyManagement() {
+export function OfficeInterior() {
   return (
     <section className="bg-white py-20 lg:py-28">
       <Container>
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="max-w-lg">
-            <Eyebrow>{propertyManagement.eyebrow}</Eyebrow>
+            <Eyebrow>{officeInterior.eyebrow}</Eyebrow>
             <h2 className="mt-4 font-display text-3xl leading-[1.12] text-[var(--color-ink)] sm:text-4xl">
-              {propertyManagement.heading}
+              {officeInterior.heading}
               <br />
-              <span className="accent">{propertyManagement.headingAccent}</span>
+              <span className="accent">{officeInterior.headingAccent}</span>
             </h2>
             <p className="mt-5 text-[14.5px] leading-relaxed text-[var(--color-body)]">
-              {propertyManagement.body}
+              {officeInterior.body}
             </p>
             <ul className="mt-6 flex flex-col">
-              {propertyManagement.checklist.map((item) => (
+              {officeInterior.checklist.map((item) => (
                 <li
                   key={item}
                   className="flex items-center gap-4 border-t border-[var(--color-border)] py-3.5 text-[14px] text-[var(--color-body)] last:border-b"
@@ -31,8 +31,8 @@ export function PropertyManagement() {
                 </li>
               ))}
             </ul>
-            <TextLink href="/solutions/property-management" className="mt-7">
-              {propertyManagement.cta}
+            <TextLink href="/solutions/office-interior" className="mt-7">
+              {officeInterior.cta}
             </TextLink>
           </div>
 
@@ -46,10 +46,10 @@ export function PropertyManagement() {
             />
             <div className="absolute bottom-0 left-0 bg-white px-6 py-4">
               <div className="font-display text-lg text-[var(--color-ink)]">
-                {propertyManagement.imageCaption}
+                {officeInterior.imageCaption}
               </div>
               <div className="mt-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--color-muted)]">
-                {propertyManagement.imageSubcaption}
+                {officeInterior.imageSubcaption}
               </div>
             </div>
           </div>

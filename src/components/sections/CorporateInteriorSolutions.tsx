@@ -51,7 +51,7 @@ export function CorporateInteriorSolutions() {
                 </li>
               ))}
             </ul>
-            <TextLink href="#contact" className="mt-7">
+            <TextLink href="/solutions/infrastructure-care" className="mt-7">
               {corporateInterior.cta}
             </TextLink>
           </div>

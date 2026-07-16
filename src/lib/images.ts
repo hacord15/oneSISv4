@@ -3,7 +3,9 @@ export const images = {
  logo_oneSIS: "/assests/homepage/logo_oneSIS.jpeg",
  logo_SISGroup: "/assests/homepage/main-logo.png",
  logo_oneSISFooter: "/assests/homepage/logo_oneSIS-removebg-preview.svg",
- herobanner: "/assests/homepage/hero-banner-img.jpg",
+//  herobanner: "/assests/homepage/hero-banner-img.jpg",
+  herobanner: "/assests/homepage/hero-banner-img.png",
+
  aboutBanner: "/assests/homepage/about-img.png",
   verticalIntegratedFM: "/assests/homepage/integrated-fm.jpg",
   verticalPropertyMgmt: "/assests/homepage/property-management.jpg",
@@ -41,11 +43,46 @@ mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
 
   //why one-sis
   StepComplianceVerification: "/assests/why-oneSIS/onesis.png",
+  onestopsolution: "/assests/why-oneSIS/one-stop-solution.avif",
+  slabasedaccountability: "/assests/why-oneSIS/sla-based-accountability.avif",
+  technologyfirstoperations: "/assests/why-oneSIS/technology-first-operations.avif",
+  groupcompaniesmanagementservices: "/assests/why-oneSIS/group-companies-management-services.avif",
+  multilevelgovernance: "/assests/why-oneSIS/multi-level-governance.avif",
+  sustainabilityandehs: "/assests/why-oneSIS/sustainability-and-ehs.avif",
+  proventrackrecord: "/assests/why-oneSIS/proven-track-record.avif",
 
 
   //board
   chairman: "/assests/board/riturajSir.jpg",
   ceo: "/assests/board/dheerajSir.jpg",
+
+
+  //solutions
+  integratedFM: "/assests/solutions/fm.png",
+  propertyManagement: "/assests/solutions/property-management.jpg",
+  hardcoreRepair: "/assests/solutions/hardcore-repair.jpg",
+  officeInterior: "/assests/solutions/office-interior.jpg",
+
+
+  //solutions Facility Management page
+  securityservices :"/assests/solutions/fm/SecurityServices.jpg",
+  softservices: "/assests/solutions/fm/Soft-Services.avif",
+  mepservices: "/assests/solutions/fm/MEP-Services.avif",
+  administrationsupport:'/assests/solutions/fm/Administration-Support.avif',
+  ehscompliance:'/assests/solutions/fm/EHS-Compliance.avif',
+  techanalytics:'/assests/solutions/fm/Technology-Analytics.avif',
+  accountmanagementlead:'/assests/solutions/fm/Account-Management-Lead.avif',
+  regionalteam:'/assests/solutions/fm/Regional-Team.avif',
+  executivesponsor:'/assests/solutions/fm/Executive-Sponsor.avif',
+  biannualpartnershipreview:'/assests/solutions/fm/Bi-Annual-Partnership-Review.avif',
+
+  //solutions Case studies page
+  propertymanagement: "/assests/solutions/casestudies/property-management.avif",
+  specializedcivil: "/assests/solutions/casestudies/specialized-civil.avif",
+  ifmtechnical: "/assests/solutions/casestudies/ifm-technical.avif",
+  pmc: "/assests/solutions/casestudies/pmc.avif",
+  specializedtechnicalservices: "/assests/solutions/casestudies/specialized-technical-services.avif",
+
 
 
 };

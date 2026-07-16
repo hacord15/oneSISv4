@@ -10,8 +10,7 @@ const advantages = [
   {
     index: "01",
     title: "One-Stop Solution",
-    image:
-      "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80",
+    image:images.onestopsolution,
     imageAlt: "Handshake between two business partners",
     description:
       "Dedicated FM and pledged SME support across all service lines under a single agreement, eliminating multi-vendor complexity.",
@@ -19,8 +18,7 @@ const advantages = [
   {
     index: "02",
     title: "SLA-Based Accountability",
-    image:
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80",
+    image:images.slabasedaccountability,
     imageAlt: "Document with checklist and pen",
     description:
       "Fixed service level agreements with defined KPIs ensure transparency and performance-driven billing.",
@@ -36,8 +34,7 @@ const advantages = [
   {
     index: "04",
     title: "Technology & Innovation",
-    image:
-      "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1200&q=80",
+    image:images.technologyfirstoperations,
     imageAlt: "Data dashboard on a laptop screen",
     description:
       "Proprietary platforms (One Point App, iOPS, FACTECH) deliver real-time dashboards, e-checklists, and predictive maintenance.",
@@ -45,8 +42,7 @@ const advantages = [
   {
     index: "05",
     title: "Group Companies Managed Services",
-    image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+    image:images.groupcompaniesmanagementservices,
     imageAlt: "Team of workers in a facility",
     description:
       "Direct deployment from the SIS Group ecosystem — no subcontracting, ensuring consistent quality and accountability.",
@@ -54,8 +50,7 @@ const advantages = [
   {
     index: "06",
     title: "Multi-Level Governance",
-    image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+    image:images.multilevelgovernance,
     imageAlt: "Business meeting with team reviewing documents",
     description: "A structured review cadence keeps every site accountable:",
     list: [
@@ -67,8 +62,7 @@ const advantages = [
   {
     index: "07",
     title: "Sustainability & EHS",
-    image:
-      "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=1200&q=80",
+    image:images.sustainabilityandehs,
     imageAlt: "Green energy and sustainable environment",
     description:
       "Dedicated safety officers, biodegradable materials, energy audits, and ESG-aligned practices built into every contract.",
@@ -76,8 +70,7 @@ const advantages = [
   {
     index: "08",
     title: "Proven Track Record",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    image: images.proventrackrecord,
     imageAlt: "Bar chart showing growth",
     description: "Trusted by 289 of the Nifty 500 companies.",
     stats: [

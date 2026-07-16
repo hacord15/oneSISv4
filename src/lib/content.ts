@@ -36,19 +36,19 @@ export const nav = {
         },
         {
           label: "Infrastructure Care",
-          href: "/solutions/specialized-services",
+          href: "/solutions/infrastructure-care",
         },
         {
           label: "Corporate Interior Solutions",
-          href: "",
+          href: "/solutions/corporate-interior-solutions",
         },
       ],
     },
     {
       label: "CAREER",
-      href: "/career",
+      href: "#",
       children: [
-        { label: "Why Work With Us", href: "#" },
+        { label: "Why Work With Us", href: "/career/why-work-with-us" },
         { label: "Current Openings", href: "/career/current-openings" },
         { label: "Employee Benefits", href: "/career/employee-benefits" },
       ],
@@ -177,26 +177,6 @@ export const hardcoreRepair = {
   ],
 };
 
-export const officeInterior = {
-  eyebrow: "Fitout Division",
-  heading: "Workplace Interior Solutions",
-  headingAccent: "Management",
-  body: "Turnkey interiors, fit-outs, integrating innovative design, energy-efficient materials, and sustainable workplace solutions.",
-  checklist: [
-    "Concept design & space planning",
-    "Design & Build (D&B) execution",
-    "Furniture, fixtures & fit-out",
-    "IT & AV infrastructure integration",
-    "Civil upgrades & retrofitting",
-    "Handover, snagging & FM transition",
-  ],
-  stats: [
-    { value: "320K+", label: "Permanent Staff" },
-    { value: "630+", label: "Districts" },
-    { value: "368", label: "Offices" },
-  ],
-};
-
 export const corporateInterior = {
   eyebrow: "Infrastructure Care",
   heading: "Infrastructure",
@@ -213,6 +193,31 @@ export const corporateInterior = {
   imageCaption: "Infrastructure Care",
   imageSubcaption: "Structural, Civil & Mechanical Services",
 };
+
+export const officeInterior = {
+  eyebrow: "Fitout Division",
+  heading: "Workplace Interior Solutions",
+  headingAccent: "Management",
+  body: "Turnkey interiors, fit-outs, integrating innovative design, energy-efficient materials, and sustainable workplace solutions.",
+  checklist: [
+    "Concept design & space planning",
+    "Design & Build (D&B) execution",
+    "Furniture, fixtures & fit-out",
+    "IT & AV infrastructure integration",
+    "Civil upgrades & retrofitting",
+    "Handover, snagging & FM transition",
+  ],
+    cta: "Explore Interior Fitout & Management",
+      imageCaption: "Residential & Commercial",
+  imageSubcaption: "Full-Spectrum Property Ops",
+  stats: [
+    { value: "320K+", label: "Permanent Staff" },
+    { value: "630+", label: "Districts" },
+    { value: "368", label: "Offices" },
+  ],
+};
+
+
 export const propertyManagement = {
   eyebrow: "Real Estate Management",
   heading: "End-to-End",
@@ -230,6 +235,47 @@ export const propertyManagement = {
   imageCaption: "Residential & Commercial",
   imageSubcaption: "Full-Spectrum Property Ops",
 };
+
+
+
+// export const officeInterior = {
+//   eyebrow: "Real Estate Management",
+//   heading: "End-to-End",
+//   headingAccent: "Property Management",
+//   body: "OneSIS delivers seamless property operations for residential complexes and commercial assets — combining technology-driven oversight, trained on-site teams, and 24/7 owner visibility dashboards.",
+//   checklist: [
+//     "Residential society & tower management",
+//     "Commercial office & retail property operations",
+//     "Vendor & contractor coordination",
+//     "Asset lifecycle tracking & compliance",
+//     "Occupant experience management",
+//     "Real-time owner dashboards & reporting",
+//   ],
+//   cta: "Explore Property Management",
+//   imageCaption: "Residential & Commercial",
+//   imageSubcaption: "Full-Spectrum Property Ops",
+// };
+
+// export const propertyManagement = {
+//   eyebrow: "Fitout Division",
+//   heading: "Workplace Interior Solutions",
+//   headingAccent: "Management",
+//   body: "Turnkey interiors, fit-outs, integrating innovative design, energy-efficient materials, and sustainable workplace solutions.",
+//   checklist: [
+//     "Concept design & space planning",
+//     "Design & Build (D&B) execution",
+//     "Furniture, fixtures & fit-out",
+//     "IT & AV infrastructure integration",
+//     "Civil upgrades & retrofitting",
+//     "Handover, snagging & FM transition",
+//   ],
+//   stats: [
+//     { value: "320K+", label: "Permanent Staff" },
+//     { value: "630+", label: "Districts" },
+//     { value: "368", label: "Offices" },
+//   ],
+// };
+
 
 export const outcomes = {
   eyebrow: "Value Framework",

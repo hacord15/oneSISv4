@@ -4,14 +4,13 @@ import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { images } from "@/lib/images";
 
-// Stock placeholders (free Unsplash License) — swap for real OneSIS site
 // photography before launch. Just replace the `image` strings below.
 const serviceCategories = [
   {
     title: "Security Services",
-    image:
-      "https://images.unsplash.com/photo-1643123182527-3bd30840e7ed?auto=format&fit=crop&w=1200&q=80",
+    image: images.securityservices,
     imageAlt: "CCTV security camera mounted to a building ceiling",
     items: [
       "Manned Guarding",
@@ -23,8 +22,7 @@ const serviceCategories = [
   },
   {
     title: "Housekeeping & Soft Services",
-    image:
-      "https://images.unsplash.com/photo-1758448721205-8465cebc26af?auto=format&fit=crop&w=1200&q=80",
+    image: images.softservices,
     imageAlt: "Spotless modern building lobby and corridor",
     items: [
       "Mechanized Cleaning",
@@ -36,8 +34,7 @@ const serviceCategories = [
   },
   {
     title: "Technical / MEP Services",
-    image:
-      "https://images.unsplash.com/photo-1771902985060-6133bb4b2eb6?auto=format&fit=crop&w=1200&q=80",
+    image: images.mepservices,
     imageAlt: "Rooftop HVAC units on a commercial building",
     items: [
       "Utility Operations & Maintenance",
@@ -49,8 +46,7 @@ const serviceCategories = [
   },
   {
     title: "Administration Support",
-    image:
-      "https://images.unsplash.com/photo-1758448721149-aa0ce8e1b2c9?auto=format&fit=crop&w=1200&q=80",
+    image:images.administrationsupport,
     imageAlt: "Modern reception desk with elevator bank",
     items: [
       "Reception Services",
@@ -62,8 +58,7 @@ const serviceCategories = [
   },
   {
     title: "EHS & Compliance",
-    image:
-      "https://images.unsplash.com/photo-1595306394931-b35768661692?auto=format&fit=crop&w=1200&q=80",
+    image:images.ehscompliance,
     imageAlt: "Fire extinguisher mounted on a wall",
     items: [
       "Safety Officers Deployment",
@@ -75,8 +70,7 @@ const serviceCategories = [
   },
   {
     title: "Technology & Analytics",
-    image:
-      "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1200&q=80",
+    image:images.techanalytics,
     imageAlt: "Data reporting dashboard on a screen",
     items: [
       "One Point App",
@@ -116,8 +110,7 @@ const governance = [
   {
     tier: "01",
     title: "Site / Regional Team",
-    image:
-      "https://images.unsplash.com/photo-1758518727653-5650fd9e146c?auto=format&fit=crop&w=1000&q=80",
+    image:images.regionalteam,
     imageAlt: "Site manager discussing a checklist on a clipboard",
     items: [
       "Daily operational supervision",
@@ -129,8 +122,7 @@ const governance = [
   {
     tier: "02",
     title: "Account Management Lead",
-    image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=80",
+    image:images.accountmanagementlead,
     imageAlt: "Two professionals shaking hands in an office",
     items: [
       "Monthly business reviews",
@@ -142,8 +134,7 @@ const governance = [
   {
     tier: "03",
     title: "Executive Sponsor",
-    image:
-      "https://images.unsplash.com/photo-1758518729685-f88df7890776?auto=format&fit=crop&w=1000&q=80",
+    image:images.executivesponsor,
     imageAlt: "Executives in a business meeting reviewing reports",
     items: [
       "Quarterly Business Reviews (QBRs)",
@@ -155,8 +146,7 @@ const governance = [
   {
     tier: "04",
     title: "Bi-Annual Partnership Review",
-    image:
-      "https://images.unsplash.com/photo-1758873271321-4d6b3526ef42?auto=format&fit=crop&w=1000&q=80",
+    image:images.biannualpartnershipreview,
     imageAlt: "Team collaborating around a table with documents",
     items: [
       "Leadership workshops",
@@ -186,7 +176,10 @@ export default function IntegratedFMPage() {
               <span className="accent">Delivered as One</span>
             </>
           }
+          
           description="OneSIS delivers end-to-end Integrated Facility Management (IFM) services that bring together people, processes, technology, and governance under a single service agreement. Our integrated delivery model ensures consistent service quality, SLA-driven performance, regulatory compliance, and operational excellence across every facility."
+          backgroundImage={images.integratedFM}
+          
         />
 
         {/* Service categories */}

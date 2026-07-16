@@ -86,7 +86,7 @@
 
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TextLink } from "@/components/ui/TextLink";
-import { hardcoreRepair, officeInterior } from "@/lib/content";
+import { hardcoreRepair, propertyManagement } from "@/lib/content";
 
 export function RepairAndInterior() {
   return (
@@ -122,7 +122,7 @@ export function RepairAndInterior() {
             ))}
           </ul>
           <TextLink href="/solutions/integrated-fm" className="mt-7">
-            Explore Facility Repair & Maintenance
+            Explore Integrated Facilities Management
           </TextLink>
         </div>
       </div>
@@ -130,17 +130,17 @@ export function RepairAndInterior() {
       {/* Right: Office Interior Management — cream panel */}
       <div className="flex flex-col items-center justify-center bg-[var(--color-cream)] px-6 py-12 sm:px-10 lg:px-16 lg:py-16">
         <div className="max-w-md mx-auto">
-          <Eyebrow>{officeInterior.eyebrow}</Eyebrow>
+          <Eyebrow>{propertyManagement.eyebrow}</Eyebrow>
           <h2 className="mt-4 font-display text-3xl leading-[1.12] text-[var(--color-ink)] sm:text-4xl">
-            {officeInterior.heading}
+            {propertyManagement.heading}
             <br />
-            <span className="accent">{officeInterior.headingAccent}</span>
+            <span className="accent">{propertyManagement.headingAccent}</span>
           </h2>
           <p className="mt-5 text-[14.5px] leading-relaxed text-[var(--color-body)]">
-            {officeInterior.body}
+            {propertyManagement.body}
           </p>
           <ul className="mt-6 flex flex-col">
-            {officeInterior.checklist.map((item) => (
+            {propertyManagement.checklist.map((item) => (
               <li
                 key={item}
                 className="flex items-center gap-4 border-t border-[var(--color-border)] py-3.5 text-[14px] text-[var(--color-body)] last:border-b"
@@ -150,8 +150,8 @@ export function RepairAndInterior() {
               </li>
             ))}
           </ul>
-          <TextLink href="/" className="mt-7">
-            Explore Interior Fitout & Management
+          <TextLink href="/solutions/property-management" className="mt-7">
+            Explore Property Management & Operations
           </TextLink>
 
           {/* <div className="mt-8 grid grid-cols-3 gap-3">

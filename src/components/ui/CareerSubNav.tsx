@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { Container } from "./Container";
 
 const tabs = [
-  { label: "Why Work With Us", href: "/career" },
+  { label: "Why Work With Us", href: "/career/why-work-with-us" },
   { label: "Current Openings", href: "/career/current-openings" },
   { label: "Employee Benefits", href: "/career/employee-benefits" },
 ];
