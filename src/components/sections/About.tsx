@@ -40,7 +40,11 @@ export function About() {
               <span className="accent">{about.headingAccent}</span>
             </h2>
 
-            <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-[var(--color-body)]">
+            {/* <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-[var(--color-body)]">
+              {about.body}
+            </p> */}
+
+            <p className="mt-6 max-w-5xl text-[15px] leading-relaxed text-[var(--color-body)]">
               {about.body}
             </p>
 

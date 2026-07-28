@@ -13,6 +13,7 @@ import { TechPlatforms } from "@/components/sections/TechPlatforms";
 import { CTA } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
 import { CorporateInteriorSolutions } from "@/components/sections/CorporateInteriorSolutions";
+import { OutcomesAndOperations } from "@/components/sections/OutcomesAndOperations";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
        
         <CorporateInteriorSolutions />
          <OfficeInterior/>
+         {/* <OutcomesAndOperations /> */}
         <FourOutcomes />
         <Accountability />
         <WhereWeOperate />

@@ -68,8 +68,8 @@ export const nav = {
 export const anchorStrip = [
   "Integrated Facility Management",
   "Property Management",
-  "Hardcore Repair & Maintenance",
-  "Office Interior Management",
+  "Infrastructure Care",
+  "Corporate Interior Solutions",
   "MEP Services",
   "EHS Compliance",
 ];
@@ -94,7 +94,7 @@ export const about = {
   eyebrow: "About OneSIS",
   heading: ["Reimagining Facilities for", ""],
   headingAccent: "Modern India",
-  body: "Born with a vision to redefine IFM, OneSIS combines the strength of the SIS Group's legacy with next-generation technology and operational excellence. Today, we deliver integrated facility management, workplace engineering, sustainability, and infrastructure solutions across India through a self-performed service model, through Group companies ensuring complete accountability, consistent quality, and measurable business outcomes.",
+  body: "Born with a vision to redefine Integrated Facility Management & Property Management, OneSIS combines the strength of the SIS Group's legacy with next-generation technology and operational excellence.To create healthier workplaces, enhance occupier experience, and deliver customer delight through seamless, self-performed service model, through Group companies, ensuring complete accountability, consistent quality, and measurable business outcomes.",
   badges: [
     "Group Companies Managed",
     "Technology-First",
@@ -168,13 +168,13 @@ export const hardcoreRepair = {
   heading: "Integrated Facility ",
   headingAccent: "Management",
   body: "Comprehensive infrastructure care encompassing engineering, preventive maintenance, repairs, refurbishment, MEP services, compliance, and lifecycle asset management.",
-  checklist: [
-    "MEP — Mechanical, Electrical & Plumbing",
-    "HVAC servicing & overhaul",
-    "Waterproofing & facade restoration",
-    "Predictive & preventive maintenance",
-    "Structural & civil repair works",
-  ],
+  checklist:  [
+  "Corporate Offices",
+  "Healthcare Facilities",
+  "Manufacturing Facilities",
+  "Data Centers",
+  "Educational Campuses",
+],
 };
 
 export const corporateInterior = {
@@ -222,15 +222,14 @@ export const propertyManagement = {
   eyebrow: "Real Estate Management",
   heading: "End-to-End",
   headingAccent: "Property Management",
-  body: "OneSIS delivers seamless property operations for residential complexes and commercial assets — combining technology-driven oversight, trained on-site teams, and 24/7 owner visibility dashboards.",
+  body: "OneSIS delivers seamless property operations for residential condominiums and commercial assets — combining technology-driven oversight, trained on-site teams, and 24/7 owner visibility dashboards.",
   checklist: [
-    "Residential society & tower management",
-    "Commercial office & retail property operations",
-    "Vendor & contractor coordination",
-    "Asset lifecycle tracking & compliance",
-    "Occupant experience management",
-    "Real-time owner dashboards & reporting",
-  ],
+  "Corporate Campuses",
+  "Residential Condominiums",
+  "Retail Destinations",
+  "Logistics Parks",
+  "Mixed-Use Developments",
+],
   cta: "Explore Property Management",
   imageCaption: "Residential & Commercial",
   imageSubcaption: "Full-Spectrum Property Ops",
@@ -315,43 +314,43 @@ export const accountability = {
   heading: "Built for",
   headingAccent: "Accountability",
   headingTail: "at Every Level",
-  body: "We combine the scale of India's largest business services group with the agility of a specialist FM provider — delivering outcomes that larger, fragmented vendors simply cannot match.",
+  body: "We combine the strengths of transforming facilities into destinations that inspire wellbeing, elevate occupier experience, enhance developer experience, and create exceptional customer delight, with new benchmarks in operational excellence.",
   items: [
     {
       index: "01",
-      title: "One-Stop Solution",
+      title: "Occupier Wellbeing",
       description:
-        "Integrated FM, property management, hardcore repair and office fitouts under a single agreement — eliminating multi-vendor complexity.",
+        "Creating healthier, safer, and more engaging workplaces where people thrive.",
     },
     {
       index: "02",
-      title: "SLA-Based Accountability",
+      title: "Developer Experience",
       description:
-        "Fixed KPIs ensure transparency and performance-driven billing at every site, with no surprises at month end.",
+        "Protecting and enhancing asset value through proactive, transparent property management.",
     },
     {
       index: "03",
-      title: "SIS Group Backing",
+      title: "Customer Delight",
       description:
-        "The financial strength and brand trust of a ₹20,059 Cr listed enterprise behind every contract you sign.",
+        "Delivering consistent service excellence that exceeds expectations at every touchpoint.",
     },
     {
       index: "04",
-      title: "Real-Time Visibility",
+      title: "Technology-Driven Excellence",
       description:
-        "Live dashboards, IoT-enabled monitoring, and digital reporting give clients complete operational control at all times.",
+        "Real-time visibility, intelligent insights, and data-driven decision-making for complete operational control.",
     },
     {
       index: "05",
-      title: "Trained Workforce",
+      title: "Operational Accountability",
       description:
-        "320K+ permanent staff trained on the proprietary M-Trainer platform ensuring skills, compliance, and service consistency.",
+        "Measurable KPIs and uncompromising governance across every site.",
     },
     {
       index: "06",
-      title: "Pan-India Reach",
+      title: "Sustainability & EHS",
       description:
-        "Operational across 29 states, 630+ districts, and 368 offices enabling truly seamless national deployments.",
+        "Driving responsible operations through energy efficiency, resource optimization, and sustainable practices.",
     },
   ],
 };

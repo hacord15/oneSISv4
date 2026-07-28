@@ -7,7 +7,7 @@ export const images = {
   herobanner: "/assests/homepage/hero-banner-img.png",
 
  aboutBanner: "/assests/homepage/about-img.png",
-  verticalIntegratedFM: "/assests/homepage/integrated-fm.jpg",
+  verticalIntegratedFM: "/assests/homepage/integrated-fm.png",
   verticalPropertyMgmt: "/assests/homepage/property-management.jpg",
   verticalHardcoreRepair: "/assests/homepage/hardcore-repair.jpg",
   verticalOfficeInterior: "/assests/homepage/office-interior.jpg",
@@ -59,7 +59,7 @@ mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
 
   //solutions
   integratedFM: "/assests/solutions/fm.png",
-  propertyManagement: "/assests/solutions/property-management.jpg",
+  propertyManagement: "/assests/solutions/casestudies/property-management.avif",
   hardcoreRepair: "/assests/solutions/hardcore-repair.jpg",
   officeInterior: "/assests/solutions/office-interior.jpg",
 
