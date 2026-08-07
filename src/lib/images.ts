@@ -58,7 +58,7 @@ mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
 
 
   //solutions
-  integratedFM: "/assests/solutions/fm.png",
+  integratedFM: "/assests/solutions/fm/fm.png",
   propertyManagement: "/assests/solutions/casestudies/property-management.avif",
   hardcoreRepair: "/assests/solutions/hardcore-repair.jpg",
   officeInterior: "/assests/solutions/office-interior.jpg",
