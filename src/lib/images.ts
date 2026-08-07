@@ -65,14 +65,14 @@ mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
 
 
   //solutions Facility Management page
-  securityservices :"/assests/solutions/fm/SecurityServices.jpg",
-  softservices: "/assests/solutions/fm/Soft-Services.avif",
-  mepservices: "/assests/solutions/fm/MEP-Services.avif",
-  administrationsupport:'/assests/solutions/fm/Administration-Support.avif',
-  ehscompliance:'/assests/solutions/fm/EHS-Compliance.avif',
-  techanalytics:'/assests/solutions/fm/Technology-Analytics.avif',
+  securityservices :"/assests/solutions/fm/SecurityServices.png",
+  softservices: "/assests/solutions/fm/Soft-Services.png",
+  mepservices: "/assests/solutions/fm/MEP-Services.png",
+  administrationsupport:'/assests/solutions/fm/Administration-Support.png',
+  ehscompliance:'/assests/solutions/fm/EHS-Compliance.png',
+  techanalytics:'/assests/solutions/fm/Technology-Analytics.png',
   accountmanagementlead:'/assests/solutions/fm/Account-Management-Lead.avif',
-  regionalteam:'/assests/solutions/fm/Regional-Team.avif',
+  regionalteam:'/assests/solutions/fm/Regional-Team.png',
   executivesponsor:'/assests/solutions/fm/Executive-Sponsor.avif',
   biannualpartnershipreview:'/assests/solutions/fm/Bi-Annual-Partnership-Review.avif',
 
