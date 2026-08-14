@@ -18,8 +18,7 @@ const icons: Record<string, React.ReactNode> = {
       <path d="M8 21h8M12 17v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
     </svg>
   ),
-  FACTECH: (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+"OneSIS FACTECH": (    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
       <path
         d="M4 20V10l8-6 8 6v10a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1Z"
         stroke="currentColor"
@@ -49,18 +48,7 @@ const icons: Record<string, React.ReactNode> = {
 export function TechPlatforms() {
   return (
     <section id="technology" className="bg-white">
-      <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_2fr]">
-        <div className="relative aspect-[16/9] sm:aspect-auto sm:h-44">
-          <Image
-            src={images.techBanner}
-            alt="OneSIS technology-enabled workplace"
-            fill
-            sizes="(min-width: 640px) 33vw, 100vw"
-            className="object-cover"
-          />
-        </div>
-        <div className="hidden bg-[var(--color-cream)] sm:block" />
-      </div>
+      
 
       <Container className="py-16 lg:py-20">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[320px_1fr] lg:gap-16">

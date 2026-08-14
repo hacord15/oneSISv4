@@ -4,6 +4,7 @@ import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { images } from "@/lib/images";
 
 // Stock placeholders (free Unsplash License) – replace with real OneSIS photography
 const serviceAreas = [
@@ -73,7 +74,7 @@ const serviceAreas = [
     ],
   },
   {
-    title: "Tenant & Resident Services",
+    title: " Occupier Tenant & Resident Services",
     image:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Receptionist assisting a visitor",
@@ -131,6 +132,8 @@ export default function PropertyManagementPage() {
             </>
           }
           description="OneSIS provides comprehensive property management solutions for residential, commercial, mixed-use, and institutional developments. From day-to-day operations to long-term asset optimization, our teams deliver seamless services backed by technology, governance, and the expertise of the SIS Group."
+                    backgroundImage={images.propertyManagementBanner}
+          
         />
 
         <section className="py-20">
@@ -170,7 +173,7 @@ export default function PropertyManagementPage() {
                           key={item}
                           className="flex items-start gap-3 text-[13px] text-[var(--color-body)]"
                         >
-                          <span className="mt-2 h-px w-3 shrink-0 bg-[var(--color-brand)]" />
+                          <span className="mt-0.5 text-[var(--color-brand)]">•</span>
                           {item}
                         </li>
                       ))}

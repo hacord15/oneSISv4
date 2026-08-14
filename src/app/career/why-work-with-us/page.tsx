@@ -16,7 +16,7 @@ const perks = [
     description: "Dedicated support for grievance redressal, salary queries, and HR support.",
   },
   {
-    title: "Timely Pay & Compliance",
+    title: "Best Compensation in the Industry",
     description: "100% statutory compliance with Aadhaar-linked salary disbursement.",
   },
   {
@@ -49,7 +49,7 @@ export default function CareerPage() {
           heading={
             <>
               Build Your Career with India&apos;s{" "}
-              <span className="accent">Fastest-Growing FM Company</span>
+              <span className="accent">Fastest-Growing Service Company</span>
             </>
           }
           description="At OneSIS, we believe our people are our most important asset. As part of the SIS Group — India's largest security and facility management enterprise with 3.5 lakh employees — we offer career opportunities, continuous learning, and a culture built on safety, dignity, and equal opportunity."

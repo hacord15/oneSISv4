@@ -38,7 +38,7 @@ const managementTeam = [
     photo: "https://picsum.photos/seed/onesis-mgmt-5/600/750",
     name: "Sanjay Patel",
     title: "Chief Technology Officer",
-    bio: "Drives the One Point App, iOPS, and FACTECH platforms that power real-time operational visibility across every client site.",
+    bio: "Drives the One Point App, iOPS, and  OneSis FACTECH platforms that power real-time operational visibility across every client site.",
   },
   {
     photo: "https://picsum.photos/seed/onesis-mgmt-6/600/750",

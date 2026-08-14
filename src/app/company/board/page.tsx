@@ -12,22 +12,22 @@ import { images } from "@/lib/images";
 const boardMembers = [
   {
     photo: images.chairman,
-     name: "Rituraj Kishore Sinha", 
+     name: "Mr. Rituraj Kishore Sinha", 
   title: "Group Managing Director", 
-  bio: "Over 20 years transforming SIS Limited into a multinational security leader, championing technology integration, cross-border acquisitions, and large-scale formal employment across the Asia-Pacific region.", 
+  bio: "Mr. Sinha has been serving as the Managing Director of the Company. He is an alumnus of the Doon School, and Leeds University Business School, United Kingdom. Since joining the SIS Group in 2002, he has played a vital role in driving the Company’s exponential growth, leading it to become a Market leader in Security, Facility Management and Cash Logistics Solutions across India, Australia, Singapore and New Zealand.", 
   },
   {
   photo: images.ceo,
-  name: "Dhiraj Singh",
+  name: "Mr. Dhiraj Singh",
   title: "Chief Executive Officer",
-  bio: "An IIT Bombay graduate and veteran business leader with over 25 years of experience leading multi-thousand crore enterprises, driving massive operational growth, technology-backed security solutions, and people-first workplace culture across SIS Group Enterprises.",
+  bio: "Mr. Dhiraj prior to joining SIS Group Enterprises, he successfully established and led several startup businesses in the infrastructure and services sectors. After completing his Mechanical Engineering from IIT Mumbai and MBA and MIM from Tulane and Thunderbird respectively in the USA, he worked with companies like Eicher, Laitram, Tata Steel and Bechtel. He then headed BD for Bovis Lend Lease and was the Country Head for Laing O’Rourke, before he founded vKarma Capital (a PE fund of DLF) and became Senior Advisor with McKinsey and Simplex Infrastructures.",
 },
-  // {
-  //   photo: "https://picsum.photos/seed/onesis-board-2/600/750",
-  //   name: "Anjali Sharma",
-  //   title: "Independent Director",
-  //   bio: "Brings two decades of experience in corporate governance and risk management, having served on the boards of several listed Indian enterprises.",
-  // },
+  {
+    photo:images.brijesh ,
+    name: "Mr. Brajesh Kumar",
+    title: "Chief Financial Officer (CFO)",
+    bio: "Mr. Brajesh, a qualified CA, worked as Proprietor/Partner of M/s P.B. and Co, Chartered Accountants and Partner of M/s S.K.Nayak and Co with 10 years of experience in Audit, Accounting, Taxation and Company Law Matters. Presently heading over 250 members team handling various Finance and Accounts functions of SIS, has been part of core member team in ERP implementation, Private Equity Transactions and IPO Process of SIS. He also received the award of “Outstanding Individual Contribution” for SIS Group Enterprises for 2011-12.",
+  },
   // {
   //   photo: "https://picsum.photos/seed/onesis-board-3/600/750",
   //   name: "Vikram Nair",

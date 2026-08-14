@@ -5,6 +5,7 @@ import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { images } from "@/lib/images";
 
 const specializedServices = [
   {
@@ -111,6 +112,8 @@ export default function SpecializedServicesPage() {
             </>
           }
           description="OneSIS delivers specialized engineering, refurbishment, and infrastructure services that extend beyond traditional facility management. Our multidisciplinary teams support clients in upgrading, modernizing, and future-proofing their built assets through technically advanced solutions."
+                    backgroundImage={images.infrastructureCareBanner}
+          
         />
 
         <section className="py-20">
@@ -146,7 +149,7 @@ export default function SpecializedServicesPage() {
                           key={item}
                           className="flex items-start gap-3 text-[13px] text-[var(--color-body)]"
                         >
-                          <span className="mt-2 h-px w-3 shrink-0 bg-[var(--color-brand)]" />
+                          <span className="mt-0.5 text-[var(--color-brand)]">•</span>
                           {item}
                         </li>
                       ))}

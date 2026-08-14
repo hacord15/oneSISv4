@@ -70,20 +70,19 @@ export const anchorStrip = [
   "Property Management",
   "Infrastructure Care",
   "Corporate Interior Solutions",
-  "MEP Services",
-  "EHS Compliance",
+  
 ];
 
 export const hero = {
-  eyebrow: "One Vision, Every Solution",
+  eyebrow: "One Vision, Infinite Solution",
   heading: ["Reimagining Workplace Solutions", " for Modern India. "],
   headingAccent: "Integrated Facility Management",
-  body: "Technology-driven, fully Group Companies Managed facility solutions — FM, property management, hardcore repair & maintenance, and office fitouts — backed by SIS Group's ₹20,059 Cr enterprise strength.",
+  body: "Technology-driven, fully Group Companies Managed facility solutions — FM, property management, hardcore repair & maintenance, and office fitouts — backed by SIS Group's ₹15,982 Cr enterprise strength.",
   primaryCta: "Explore Solutions",
   secondaryCta: "Download Company Profile",
   scrollLabel: "Scroll to Explore",
   stats: [
-    { value: "₹20,059 Cr", label: "Annual Turnover" },
+    { value: "₹15,982 Cr", label: "Annual Turnover" },
     { value: "3.5 Lakh+", label: "Workforce Strength" },
     { value: "29 States", label: "Pan-India Presence" },
     { value: "320K+", label: "Sites Managed" },
@@ -101,15 +100,15 @@ export const about = {
     "SIS Group Backup",
     "SLA Guaranteed",
     "Pan-India Presence",
-    // "Single Vendor",
+    "End-to-End Solutions",
   ],
   facts: [
-    { value: "2023", label: "Established, India" },
+    { value: "2024", label: "Established, India" },
     { value: "100%", label: "SIS Ltd Subsidiary" },
-    { value: "₹20,059 Cr", label: "SIS Group Revenue" },
+    { value: "₹15,982 Cr", label: "SIS Group Revenue" },
     { value: "3.5 Lakh", label: "SIS Group Employees" },
     { value: "16", label: "SIS Group Companies" },
-    { value: "29", label: "States" },
+    { value: "790", label: "Districts" },
   ],
   imageCaption: "Residential & Commercial",
 };
@@ -156,7 +155,7 @@ export const verticals = {
 };
 
 export const statsStrip = [
-  { value: "₹20,059 Cr", label: "Group Revenue" },
+  { value: "₹15,982 Cr", label: "Group Revenue" },
   { value: "3.5 Lakh+", label: "Employees" },
   { value: "16", label: "Group Companies" },
   { value: "29", label: "States" },
@@ -168,6 +167,7 @@ export const hardcoreRepair = {
   heading: "Integrated Facility ",
   headingAccent: "Management",
   body: "Comprehensive infrastructure care encompassing engineering, preventive maintenance, repairs, refurbishment, MEP services, compliance, and lifecycle asset management.",
+  sectorsHeading: "Sectors We Operate",
   checklist:  [
   "Corporate Offices",
   "Healthcare Facilities",
@@ -175,12 +175,18 @@ export const hardcoreRepair = {
   "Data Centers",
   "Educational Campuses",
 ],
+  cta: "Explore Facility Management",
+  imageCaption: "Integrated Facility Management",
+  imageSubcaption: "Engineering, Maintenance & Asset Care",
+
 };
 
 export const corporateInterior = {
   eyebrow: "Infrastructure Care",
   heading: "Infrastructure",
   headingAccent: "Care",
+    sectorsHeading: "Sectors We Operate",
+
   body: "Structural, civil & mechanical repair work by trained technicians — zero compromise on safety.",
   checklist: [
     "Engineering and Technical Services",
@@ -196,8 +202,10 @@ export const corporateInterior = {
 
 export const officeInterior = {
   eyebrow: "Fitout Division",
-  heading: "Workplace Interior Solutions",
+  heading: "Corporate Interior Solutions",
   headingAccent: "Management",
+    sectorsHeading: "Sectors We Operate",
+
   body: "Turnkey interiors, fit-outs, integrating innovative design, energy-efficient materials, and sustainable workplace solutions.",
   checklist: [
     "Concept design & space planning",
@@ -222,6 +230,8 @@ export const propertyManagement = {
   eyebrow: "Real Estate Management",
   heading: "End-to-End",
   headingAccent: "Property Management",
+    sectorsHeading: "Sectors We Operate",
+
   body: "OneSIS delivers seamless property operations for residential condominiums and commercial assets — combining technology-driven oversight, trained on-site teams, and 24/7 owner visibility dashboards.",
   checklist: [
   "Corporate Campuses",
@@ -384,7 +394,7 @@ export const technology = {
       highlighted: false,
     },
     {
-      name: "FACTECH",
+      name: "OneSIS FACTECH",
       tag: "FM Platform",
       description:
         "Comprehensive FM workflow automation — from ticket raising to preventive maintenance scheduling.",
@@ -409,7 +419,7 @@ export const cta = {
   primaryCta: "Contact Our Team",
   secondaryCta: "Download Profile",
   stats: [
-    { value: "₹20,059 Cr", label: "Group Revenue", highlighted: false },
+    { value: "₹15,982 Cr", label: "Group Revenue", highlighted: false },
     { value: "3.5L", label: "Employees", highlighted: false },
     { value: "29", label: "States", highlighted: true },
     { value: "16", label: "Group Companies", highlighted: false },
@@ -418,34 +428,63 @@ export const cta = {
 
 export const footer = {
   description:
-    "A SIS Group company delivering technology-driven, self-managed integrated facility management, real estate services, hardcore repair & maintenance, and office interior management across India.",
+    "A SIS Group company delivering technology-driven, group managed integrated facility management, real estate services, hardcore repair & maintenance, and office interior management across India.",
   badge: "Part of SIS Group — India's #1 FM Company",
-  columns: [
-    {
-      title: "Company",
-      links: [
-        "About SIS Group",
-        "About OneSIS",
-        "Board & Management",
-        "Why OneSIS",
-        "News & Updates",
-      ],
-    },
-    {
-      title: "Solutions",
-      links: [
-        "Integrated Facility Management",
-        "Real Estate Services",
-        "Asset Restoration & Maintenance",
-        "Workplace Interior Solutions",
-        "Technology Platforms",
-      ],
-    },
-    {
-      title: "Connect",
-      links: ["Contact Us", "Careers", "Download Profile", "Privacy Policy"],
-    },
-  ],
-  social: ["LinkedIn", "Twitter", "Instagram"],
-  copyright: "© 2024 OneSIS. A SIS Ltd Company. All rights reserved.",
+ columns: [
+  {
+    title: "Company",
+    links: [
+      { label: "About SIS Group", href: "/company/sis-group" },
+      { label: "About OneSIS", href: "/company/onesis" },
+      { label: "Board & Management", href: "/company/board" },
+      { label: "Why OneSIS", href: "/company/why-onesis" },
+      { label: "News & Updates", href: "/company/news" },
+    ],
+  },
+  {
+    title: "Solutions",
+    links: [
+      {
+        label: "Integrated Facility Management",
+        href: "/solutions/integrated-fm",
+      },
+      {
+        label: "Property Management",
+        href: "/solutions/property-management",
+      },
+      {
+        label: "Infrastructure Care",
+        href: "/solutions/infrastructure-care",
+      },
+      {
+        label: "Corporate Interior Solutions",
+        href: "/solutions/corporate-interior-solutions",
+      },
+    ],
+  },
+  {
+    title: "Connect",
+    links: [
+      { label: "Contact Us", href: "/contact" },
+      { label: "Careers", href: "/career/current-openings" },
+      { label: "Download Profile", href: "/download-profile" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+    ],
+  },
+],
+  social: [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/onesis/",
+  },
+  {
+    label: "Twitter",
+    href: "https://twitter.com/onesis",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/onesis/",
+  },
+],
+copyright: "© 2024 OneSIS. A SIS Ltd Company. All rights reserved.",
 };

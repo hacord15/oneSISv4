@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { images } from "@/lib/images";
+import { TechnologyPlatformSlider } from "@/components/sections/TechnologyPlatformSlider";
 
 // photography before launch. Just replace the `image` strings below.
 const serviceCategories = [
@@ -21,11 +22,11 @@ const serviceCategories = [
     ],
   },
   {
-    title: "Housekeeping & Soft Services",
+    title: "Soft Services",
     image: images.softservices,
     imageAlt: "Spotless modern building lobby and corridor",
     items: [
-      "Mechanized Cleaning",
+      "Robotic Cleaning",
       "Waste Management",
       "Pest Control",
       "Landscaping & Horticulture",
@@ -46,7 +47,7 @@ const serviceCategories = [
   },
   {
     title: "Administration Support",
-    image:images.administrationsupport,
+    image: images.administrationsupport,
     imageAlt: "Modern reception desk with elevator bank",
     items: [
       "Reception Services",
@@ -58,10 +59,10 @@ const serviceCategories = [
   },
   {
     title: "EHS & Compliance",
-    image:images.ehscompliance,
+    image: images.ehscompliance,
     imageAlt: "Fire extinguisher mounted on a wall",
     items: [
-      "Safety Officers Deployment",
+      
       "Fire Safety Management",
       "First Aid & Emergency Response",
       "PPE Compliance",
@@ -70,14 +71,12 @@ const serviceCategories = [
   },
   {
     title: "Technology & Analytics",
-    image:images.techanalytics,
+    image: images.techanalytics,
     imageAlt: "Data reporting dashboard on a screen",
     items: [
       "One Point App",
       "iOPS Platform",
-      "FACTECH Integration",
-      "E-Checklists",
-      "Attendance Dashboards",
+      "OneSis FACTECH Integration",
       "CMMS & CRM Reporting",
     ],
   },
@@ -88,21 +87,25 @@ const platforms = [
     name: "One Point App",
     description:
       "A centralized platform providing real-time monitoring of service delivery, task management, inspections, issue tracking, and site-level reporting.",
+    image: images.technologyOnePointApp,
   },
   {
     name: "iOPS Platform",
     description:
       "Operational intelligence platform for Tier-II staff performance monitoring, workforce productivity tracking, and KPI management.",
+    image: images.technologyIOPS,
   },
   {
-    name: "FACTECH / CMMS",
+    name: "OneSis FACTECH / CMMS",
     description:
       "Cloud-based computerized maintenance management system enabling preventive maintenance, asset lifecycle management, work orders, complaint management, and equipment tracking.",
+    image: images.technologyFACTECH,
   },
   {
     name: "E-Attendance",
     description:
       "Biometric and Aadhaar-enabled attendance with bank account verification for seamless onboarding and workforce management.",
+    image: images.technologyEAttendance,
   },
 ];
 
@@ -110,7 +113,7 @@ const governance = [
   {
     tier: "01",
     title: "Site / Regional Team",
-    image:images.regionalteam,
+    image: images.regionalteam,
     imageAlt: "Site manager discussing a checklist on a clipboard",
     items: [
       "Daily operational supervision",
@@ -122,7 +125,7 @@ const governance = [
   {
     tier: "02",
     title: "Account Management Lead",
-    image:images.accountmanagementlead,
+    image: images.accountmanagementlead,
     imageAlt: "Two professionals shaking hands in an office",
     items: [
       "Monthly business reviews",
@@ -134,7 +137,7 @@ const governance = [
   {
     tier: "03",
     title: "Executive Sponsor",
-    image:images.executivesponsor,
+    image: images.executivesponsor,
     imageAlt: "Executives in a business meeting reviewing reports",
     items: [
       "Quarterly Business Reviews (QBRs)",
@@ -146,7 +149,7 @@ const governance = [
   {
     tier: "04",
     title: "Bi-Annual Partnership Review",
-    image:images.biannualpartnershipreview,
+    image: images.biannualpartnershipreview,
     imageAlt: "Team collaborating around a table with documents",
     items: [
       "Leadership workshops",
@@ -172,14 +175,14 @@ export default function IntegratedFMPage() {
           eyebrow="Solutions"
           heading={
             <>
-              Full-Suite Facility Management,{" "}
+              Full-Suite Integrated Facility Management,{" "}
               <span className="accent">Delivered as One</span>
             </>
           }
-          
+
           description="OneSIS delivers end-to-end Integrated Facility Management (IFM) services that bring together people, processes, technology, and governance under a single service agreement. Our integrated delivery model ensures consistent service quality, SLA-driven performance, regulatory compliance, and operational excellence across every facility."
           backgroundImage={images.integratedFM}
-          
+
         />
 
         {/* Service categories */}
@@ -209,13 +212,14 @@ export default function IntegratedFMPage() {
                     <h3 className="text-[16px] font-semibold text-[var(--color-ink)]">
                       {cat.title}
                     </h3>
+
                     <ul className="mt-4 flex flex-col gap-2.5">
                       {cat.items.map((item) => (
                         <li
                           key={item}
                           className="flex items-start gap-3 text-[13px] text-[var(--color-body)]"
                         >
-                          <span className="mt-2 h-px w-3 shrink-0 bg-[var(--color-brand)]" />
+                          <span className="mt-0.5 text-[var(--color-brand)]">•</span>
                           {item}
                         </li>
                       ))}
@@ -228,27 +232,17 @@ export default function IntegratedFMPage() {
         </section>
 
         {/* Technology platform */}
-        <section className="bg-[var(--color-cream)] py-20">
-          <Container>
-            <Eyebrow>Technology Platform</Eyebrow>
-            <h2 className="mt-4 font-display text-[2rem] text-[var(--color-ink)] sm:text-[2.5rem]">
-              Real-Time <span className="accent">Operational Intelligence</span>
-            </h2>
+       {/* Technology platform */}
+<section className="bg-[var(--color-cream)] py-20">
+  <Container>
+    <Eyebrow>Technology Platform</Eyebrow>
+    <h2 className="mt-4 font-display text-[2rem] text-[var(--color-ink)] sm:text-[2.5rem]">
+      Real-Time <span className="accent">Operational Intelligence</span>
+    </h2>
 
-            <div className="mt-10 grid grid-cols-1 divide-y divide-[var(--color-border)] border border-[var(--color-border)] bg-white sm:grid-cols-2 sm:divide-x sm:divide-y-0">
-              {platforms.map((p) => (
-                <div key={p.name} className="p-8">
-                  <h3 className="text-[16px] font-semibold text-[var(--color-ink)]">
-                    {p.name}
-                  </h3>
-                  <p className="mt-2.5 text-[13.5px] leading-relaxed text-[var(--color-body)]">
-                    {p.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </Container>
-        </section>
+    <TechnologyPlatformSlider platforms={platforms} />
+  </Container>
+</section>
 
         {/* Governance model */}
         <section className="py-20">
@@ -284,7 +278,7 @@ export default function IntegratedFMPage() {
                           key={item}
                           className="flex items-start gap-3 text-[13px] text-[var(--color-body)]"
                         >
-                          <span className="mt-2 h-px w-3 shrink-0 bg-[var(--color-brand)]" />
+                          <span className="mt-0.5 text-[var(--color-brand)]">•</span>
                           {item}
                         </li>
                       ))}

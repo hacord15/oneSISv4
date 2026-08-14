@@ -8,26 +8,28 @@ export const images = {
 
  aboutBanner: "/assests/homepage/about-img.png",
   verticalIntegratedFM: "/assests/homepage/integrated-fm.png",
-  verticalPropertyMgmt: "/assests/homepage/property-management.jpg",
-  verticalHardcoreRepair: "/assests/homepage/hardcore-repair.jpg",
+  verticalPropertyMgmt: "/assests/homepage/property-management.png",
+  verticalHardcoreRepair: "/assests/homepage/hardcore-repair.png",
   verticalOfficeInterior: "/assests/homepage/office-interior.jpg",
   repairSpotlight: "/assests/homepage/repair-spotlight.jpg",
   propertySpotlight: "/assests/homepage/property-spotlight.jpg",
   operateOne: "/assests/homepage/operate-one.jpg",
   operateTwo: "/assests/homepage/operate-two.jpg",
-  operateThree: "/assests/homepage/operate-three.jpg",
+  operateThree: "/assests/homepage/operate-three.png",
   techBanner: "/assests/homepage/tech-banner.jpg",
+  
+  ifmmain: "/assests/homepage/ifm-main.png",
+  pmsmain: "/assests/homepage/pms-main.png",
+
+
   //company 
   sisGroup: "/assests/company/sis-group.jpg",
   board: "/assests/company/board.jpg",
   team: "/assests/company/team.jpg",
   news: "/assests/company/news.jpg",
   //Company Banner
-  aboutOneSIS:"/assests/company/About_OneSIS_Banner.png",
   aboutSISGroup:"/assests/company/About_SIS_group_Banner.png",
-  boardBanner:"/assests/company/Board_Banner.png",
   managementTeamBanner:"/assests/company/Management_Team_Banner.png",
-  whyOneSISBanner:"/assests/company/Why_OneSis_Banner.png",
   newsBanner:"/assests/company/News_Banner.png",
   trainingBanner:"/assests/company/Traning_devlopment_Banner.png",
 
@@ -50,18 +52,43 @@ mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
   multilevelgovernance: "/assests/why-oneSIS/multi-level-governance.avif",
   sustainabilityandehs: "/assests/why-oneSIS/sustainability-and-ehs.avif",
   proventrackrecord: "/assests/why-oneSIS/proven-track-record.avif",
+  whyOneSISBanner:"/assests/why-oneSIS/why-oneSIS-banner.png",
 
 
   //board
   chairman: "/assests/board/riturajSir.jpg",
   ceo: "/assests/board/dheerajSir.jpg",
+  brijesh: "/assests/board/brijeshSir.jpg",
+  boardBanner:"/assests/board/About_OneSIS_Banner.png",
+  
 
 
-  //solutions
+
+
+  //solutions banner
   integratedFM: "/assests/solutions/fm/fm.png",
+  propertyManagementBanner: "/assests/solutions/property-management/property-management-banner.png",
+  infrastructureCareBanner: "/assests/solutions/infrastructure-care/infrastructure-care.png",
+
+
+
+
   propertyManagement: "/assests/solutions/casestudies/property-management.avif",
   hardcoreRepair: "/assests/solutions/hardcore-repair.jpg",
   officeInterior: "/assests/solutions/office-interior.jpg",
+
+
+
+  //corporate interior solutions
+  interiorSolutionsBanner: "/assests/solutions/interior-solutions/interior-solutions.png",
+  conceptdesign: "/assests/solutions/interior-solutions/concept-design.png",
+  designBuild: "/assests/solutions/interior-solutions/design-build.png",
+  furniture: "/assests/solutions/interior-solutions/furniture.png",
+  itAV: "/assests/solutions/interior-solutions/it-av.png",
+  civilUpgrades: "/assests/solutions/interior-solutions/civil-upgrades.png",
+  handover: "/assests/solutions/interior-solutions/handover.png",
+
+ 
 
 
   //solutions Facility Management page
@@ -83,6 +110,26 @@ mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
   pmc: "/assests/solutions/casestudies/pmc.avif",
   specializedtechnicalservices: "/assests/solutions/casestudies/specialized-technical-services.avif",
 
+// Technology Platform
+technologyOnePointApp: "/assests/solutions/fm/technology-one-point-app.png",
+technologyIOPS: "/assests/solutions/fm/technology-iops.png",
+technologyFACTECH: "/assests/solutions/fm/technology-factech.png",
+technologyEAttendance: "/assests/solutions/fm/technology-e-attendance.png",
 
+
+  //sis group companies
+  companies: "/assests/company/sis-group/companies.png",
+  market: "/assests/company/sis-group/market-leader2.png",
+  footprints: "/assests/company/sis-group/map-2a.jpg",
+  sisGroupBanner: "/assests/company/sis-group/banner.png",
+
+
+// one sis page 
+
+aboutOneSIS: "/assests/company/one-sis/about-onesis.png",
+
+
+//CTA 
+cta1: "/assests/homepage/cta-1.png",
 
 };

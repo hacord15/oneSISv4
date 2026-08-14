@@ -7,7 +7,7 @@ import { Tag } from "@/components/ui/Tag";
 import { images } from "@/lib/images";
 
 const paragraphs = [
-  "Founded in 2023–24, OneSIS is a 100% wholly owned subsidiary of SIS Ltd, established to deliver comprehensive, technology-driven, and self-managed facility management solutions.",
+  "Founded in 2023, OneSIS is a 100% wholly owned subsidiary of SIS Ltd, established to deliver comprehensive, technology-driven, and group-managed facility management solutions.",
   "OneSIS was conceptualized to bring together the full depth of the SIS Group's capabilities under a single umbrella, offering clients a truly integrated experience.",
   "From soft services to technical operations, from property management to specialized civil and MEP works, OneSIS provides one point of accountability for all facility needs.",
 ];
@@ -20,18 +20,18 @@ const highlights = [
   },
   {
     index: "02",
-    title: "Founded 2023–24",
+    title: "Founded 2023",
     description: "Built for the next generation of integrated facility services.",
   },
   {
     index: "03",
     title: "Technology-First",
     description: "Proprietary platforms power every engagement, end to end.",
-    tags: ["One Point App", "iOPS", "FACTECH", "M-Trainer"],
+    tags: ["One Point App", "iOPS", "OneSis FACTECH", "M-Trainer"],
   },
   {
     index: "04",
-    title: "Group Companies Managed",
+    title: "Solution Services",
     description: "Services delivered directly — not subcontracted — ensuring quality.",
   },
 ];
@@ -60,19 +60,19 @@ export default function AboutOneSISPage() {
         />
 
         <section className="py-20">
-          <Container className="max-w-3xl">
-            <div className="flex flex-col gap-5">
-              {paragraphs.map((p) => (
-                <p
-                  key={p}
-                  className="text-[15px] leading-relaxed text-[var(--color-body)]"
-                >
-                  {p}
-                </p>
-              ))}
-            </div>
-          </Container>
-        </section>
+  <Container className="max-w-3xl">
+    <div className="flex flex-col gap-3">
+      {paragraphs.map((p) => (
+        <p
+          key={p}
+          className="text-[15px] leading-relaxed text-[var(--color-body)]"
+        >
+          {p}
+        </p>
+      ))}
+    </div>
+  </Container>
+</section>
 
         <section className="bg-[var(--color-cream)] py-20">
           <Container>

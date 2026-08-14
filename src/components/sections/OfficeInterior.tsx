@@ -20,6 +20,10 @@ export function OfficeInterior() {
             <p className="mt-5 text-[14.5px] leading-relaxed text-[var(--color-body)]">
               {officeInterior.body}
             </p>
+
+               <h3 className="mt-6 font-display text-xl text-[var(--color-ink)]">
+                            {officeInterior.sectorsHeading}
+                          </h3>
             <ul className="mt-6 flex flex-col">
               {officeInterior.checklist.map((item) => (
                 <li
@@ -31,7 +35,7 @@ export function OfficeInterior() {
                 </li>
               ))}
             </ul>
-            <TextLink href="/solutions/office-interior" className="mt-7">
+            <TextLink href="/solutions/corporate-interior-solutions" className="mt-7">
               {officeInterior.cta}
             </TextLink>
           </div>

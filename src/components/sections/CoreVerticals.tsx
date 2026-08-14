@@ -18,9 +18,9 @@ export function CoreVerticals() {
               <span className="accent">{verticals.headingAccent}</span>
             </h2>
           </div>
-          <p className="max-w-sm text-[15px] leading-relaxed text-[var(--color-body)] lg:text-right">
-            {verticals.body}
-          </p>
+          <p className="max-w-xl text-[15px] leading-relaxed text-[var(--color-body)] lg:text-right">
+  {verticals.body}
+</p>
         </div>
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 pt-10 sm:grid-cols-2 lg:grid-cols-4">

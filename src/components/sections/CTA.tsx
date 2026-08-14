@@ -81,7 +81,7 @@ export function CTA() {
         <Image
           src={
             i === 0
-              ? images.verticalIntegratedFM
+              ? images.cta1
               : images.verticalOfficeInterior
           }
           alt=""

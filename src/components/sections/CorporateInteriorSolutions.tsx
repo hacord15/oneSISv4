@@ -40,6 +40,9 @@ export function CorporateInteriorSolutions() {
             <p className="mt-5 text-[14.5px] leading-relaxed text-[var(--color-body)]">
               {corporateInterior.body}
             </p>
+            <h3 className="mt-6 font-display text-xl text-[var(--color-ink)]">
+                            {corporateInterior.sectorsHeading}
+                          </h3>
             <ul className="mt-6 flex flex-col">
               {corporateInterior.checklist.map((item) => (
                 <li

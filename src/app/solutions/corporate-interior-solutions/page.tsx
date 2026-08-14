@@ -6,14 +6,15 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { CategoryCard } from "@/components/ui/CategoryCard";
+import { images } from "@/lib/images";
 
 const process = [
-  { step: "01", title: "Concept design & space planning" },
-  { step: "02", title: "Design & Build (D&B) execution" },
-  { step: "03", title: "Furniture, fixtures & fit-out" },
-  { step: "04", title: "IT & AV infrastructure integration" },
-  { step: "05", title: "Civil upgrades & retrofitting" },
-  { step: "06", title: "Handover, snagging & FM transition" },
+  { step: "01", title: "Concept design & space planning", img: images.conceptdesign },
+  { step: "02", title: "Design & Build (D&B) execution", img: images.designBuild },
+  { step: "03", title: "Furniture, fixtures & fit-out", img: images.furniture },
+  { step: "04", title: "IT & AV infrastructure integration", img: images.itAV },
+  { step: "05", title: "Civil upgrades & retrofitting", img: images.civilUpgrades },
+  { step: "06", title: "Handover, snagging & FM transition", img: images.handover },
 ];
 
 const categories = [
@@ -76,7 +77,7 @@ export default function CorporateInteriorSolutionsPage() {
             </>
           }
           description="Design-led, project-managed fitout solutions from concept to handover for corporate spaces."
-          backgroundImage="https://picsum.photos/seed/onesis-cis-hero/1800/900"
+          backgroundImage={images.interiorSolutionsBanner}
         />
 
         {/* Fitout process */}
@@ -84,26 +85,79 @@ export default function CorporateInteriorSolutionsPage() {
           <Container>
             <Eyebrow>Our Fitout Process</Eyebrow>
             <h2 className="mt-4 font-display text-[2rem] text-[var(--color-ink)] sm:text-[2.5rem]">
-              From Blank Floor Plate to{" "}
-              <span className="accent">Fully Operational</span>
+              From Bare Shell to{" "}
+              <span className="accent">Business Ready</span>
             </h2>
 
-            <div className="mt-10 grid grid-cols-1 divide-y divide-[var(--color-border)] border-t border-[var(--color-border)] sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-3">
-              {process.map((p) => (
-                <div key={p.step} className="px-6 py-10 sm:px-8">
-                  <span className="font-display text-4xl text-[var(--color-muted-2)]">
-                    {p.step}
-                  </span>
-                  <h3 className="mt-4 text-[15px] font-semibold leading-snug text-[var(--color-ink)]">
-                    {p.title}
-                  </h3>
+            <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {process.map((p, i) => (
+                <div
+                  key={p.step}
+                  className="fitout-card group relative overflow-hidden rounded-2xl border border-[var(--color-border)] bg-white transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl"
+                  style={{ animationDelay: `${i * 90}ms` }}
+                >
+                  {/* Image */}
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={p.img}
+                      alt={p.title}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    />
+                    {/* Gradient overlay for legibility */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+
+                    {/* Big step number */}
+                    <span className="absolute bottom-4 left-4 font-display text-5xl font-semibold text-white drop-shadow-sm">
+                      {p.step}
+                    </span>
+
+                    {/* Next-step arrow, hidden on last card */}
+                    {i < process.length - 1 && (
+                      <span className="absolute bottom-4 right-4 flex h-9 w-9 translate-x-1 items-center justify-center rounded-full bg-white/90 text-lg font-semibold text-[var(--color-brand)] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                        →
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Text */}
+                  <div className="p-6">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[var(--color-muted-2)]">
+                      Step {p.step}
+                    </span>
+                    <h3 className="mt-2 text-[16px] font-semibold leading-snug text-[var(--color-ink)]">
+                      {p.title}
+                    </h3>
+                  </div>
                 </div>
               ))}
             </div>
           </Container>
-        </section>
 
-     
+          <style>{`
+            .fitout-card {
+              opacity: 0;
+              animation: fitoutFadeUp 0.6s ease-out forwards;
+            }
+            @keyframes fitoutFadeUp {
+              from {
+                opacity: 0;
+                transform: translateY(16px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            @media (prefers-reduced-motion: reduce) {
+              .fitout-card {
+                animation: none;
+                opacity: 1;
+              }
+            }
+          `}</style>
+        </section>
 
         {/* Service categories */}
         <section className="bg-[var(--color-cream)] py-20">
@@ -123,7 +177,7 @@ export default function CorporateInteriorSolutionsPage() {
         </section>
 
         {/* Stats */}
-        <section className="border-y border-[var(--color-border)] bg-white">
+        {/* <section className="border-y border-[var(--color-border)] bg-white">
           <Container>
             <div className="grid grid-cols-3 divide-x divide-[var(--color-border)]">
               {stats.map((stat) => (
@@ -138,7 +192,7 @@ export default function CorporateInteriorSolutionsPage() {
               ))}
             </div>
           </Container>
-        </section>
+        </section> */}
 
         {/* CTA */}
         <section className="bg-[var(--color-cream)] py-16">
