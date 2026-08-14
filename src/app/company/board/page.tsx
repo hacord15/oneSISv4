@@ -23,7 +23,7 @@ const boardMembers = [
   bio: "Mr. Dhiraj prior to joining SIS Group Enterprises, he successfully established and led several startup businesses in the infrastructure and services sectors. After completing his Mechanical Engineering from IIT Mumbai and MBA and MIM from Tulane and Thunderbird respectively in the USA, he worked with companies like Eicher, Laitram, Tata Steel and Bechtel. He then headed BD for Bovis Lend Lease and was the Country Head for Laing O’Rourke, before he founded vKarma Capital (a PE fund of DLF) and became Senior Advisor with McKinsey and Simplex Infrastructures.",
 },
   {
-    photo:images.brijesh ,
+    photo:images.brijesh,
     name: "Mr. Brajesh Kumar",
     title: "Chief Financial Officer (CFO)",
     bio: "Mr. Brajesh, a qualified CA, worked as Proprietor/Partner of M/s P.B. and Co, Chartered Accountants and Partner of M/s S.K.Nayak and Co with 10 years of experience in Audit, Accounting, Taxation and Company Law Matters. Presently heading over 250 members team handling various Finance and Accounts functions of SIS, has been part of core member team in ERP implementation, Private Equity Transactions and IPO Process of SIS. He also received the award of “Outstanding Individual Contribution” for SIS Group Enterprises for 2011-12.",
