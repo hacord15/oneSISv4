@@ -134,7 +134,7 @@ export default function CaseStudiesPage() {
         </section>
 
         {/* Additional featured project */}
-        <section className="bg-[var(--color-cream)] py-20">
+        {/* <section className="bg-[var(--color-cream)] py-20">
           <Container>
             <Eyebrow>Additional Featured Project</Eyebrow>
             <div className="mt-6 overflow-hidden rounded-2xl border border-[var(--color-border)] bg-white transition duration-300 hover:shadow-lg">
@@ -168,7 +168,7 @@ export default function CaseStudiesPage() {
               </div>
             </div>
           </Container>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>
