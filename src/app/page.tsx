@@ -14,6 +14,7 @@ import { CTA } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
 import { CorporateInteriorSolutions } from "@/components/sections/CorporateInteriorSolutions";
 import { OutcomesAndOperations } from "@/components/sections/OutcomesAndOperations";
+import { ComplianceRiskManagement } from "@/components/sections/ComplianceRiskManagement";
 
 export default function Home() {
   return (
@@ -31,6 +32,8 @@ export default function Home() {
          <OfficeInterior/>
          {/* <OutcomesAndOperations /> */}
         <FourOutcomes />
+                <ComplianceRiskManagement />
+
         <Accountability />
         <WhereWeOperate />
         <TechPlatforms />

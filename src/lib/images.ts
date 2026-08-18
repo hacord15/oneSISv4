@@ -20,7 +20,7 @@ export const images = {
   
   ifmmain: "/assests/homepage/ifm-main.png",
   pmsmain: "/assests/homepage/pms-main.png",
-
+complianceBanner: "/assests/homepage/compliance-risk-banner.png",
 
   //company 
   sisGroup: "/assests/company/sis-group.jpg",
@@ -29,9 +29,7 @@ export const images = {
   news: "/assests/company/news.jpg",
   //Company Banner
   aboutSISGroup:"/assests/company/About_SIS_group_Banner.png",
-  managementTeamBanner:"/assests/company/Management_Team_Banner.png",
-  newsBanner:"/assests/company/News_Banner.png",
-  trainingBanner:"/assests/company/Traning_devlopment_Banner.png",
+
 
   // Company Training & Development
   trainingFunctional: "/images/training/functional-training.jpg",
@@ -39,8 +37,12 @@ trainingTechnical: "/images/training/technical-training.jpg",
 trainingSoftSkills: "/images/training/soft-skills-training.jpg",
 mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
 
-  //contact
-  contactBanner: "/assests/homepage/contact-banner.jpg",
+  //contact page
+  //
+  contactBanner: "/assests/contact/PresenceMapPage/contact-banner.png",
+  contactFormBanner: "/assests/contact/ContactFormPage/contact-form-banner.png",
+  partnerWithUsBanner: "/assests/contact/PartnerWithUsPage/partner-with-us-banner.png",
+
 
 
   //why one-sis
@@ -61,8 +63,18 @@ mTrainerPlatform: "/images/training/m-trainer-platform.jpg",
   brijesh: "/assests/board/brijeshSir.jpg",
   boardBanner:"/assests/board/About_OneSIS_Banner.png",
   
+  //management team
+  managementTeamBanner:"/assests/company/management/Management_Team_Banner.png",
+  managementTeam: "/assests/company/management/management-team.jpg",
+  managementTeam1: "/assests/company/management/management-team-1.jpg",
+  managementTeam2: "/assests/company/management/management-team-2.jpg",
 
 
+  //news
+    newsBanner:"/assests/company/news-media/News_Banner.png",
+
+  //training & developmentTraining_Development_Banner
+  trainingBanner:"/assests/company/training-development/Training_Development_Banner.png",
 
 
   //solutions banner
@@ -131,5 +143,12 @@ aboutOneSIS: "/assests/company/one-sis/about-onesis.png",
 
 //CTA 
 cta1: "/assests/homepage/cta-1.png",
+
+
+//career page 
+
+whyworkwithusBanner: "/assests/career/why-work-with-us/Why_Work_With_Us_Banner.png",
+currentopeningsBanner: "/assests/career/current-openings/Current_Openings_Banner.png",
+employeeBenefitsBanner: "/assests/career/employee-benefits/Employee_Benefits_Banner.png",
 
 };

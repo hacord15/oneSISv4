@@ -10,8 +10,10 @@ import {
 import { Container } from "@/components/ui/Container";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
+import { PageHero } from "@/components/ui/PageHero";
+import { images } from "@/lib/images";
 
-/* ---------- form primitives (duplicated for self‑containment) ---------- */
+/* ---------- form primitives ---------- */
 function Field({
   label,
   name,
@@ -28,8 +30,12 @@ function Field({
   return (
     <label className="block">
       <span className="mb-2 block text-[13px] font-medium tracking-wide text-[var(--color-body)]">
-        {label} {required && <span className="text-[var(--color-brand)]">*</span>}
+        {label}{" "}
+        {required && (
+          <span className="text-[var(--color-brand)]">*</span>
+        )}
       </span>
+
       <input
         name={name}
         type={type}
@@ -55,8 +61,12 @@ function SelectField({
   return (
     <label className="block">
       <span className="mb-2 block text-[13px] font-medium tracking-wide text-[var(--color-body)]">
-        {label} {required && <span className="text-[var(--color-brand)]">*</span>}
+        {label}{" "}
+        {required && (
+          <span className="text-[var(--color-brand)]">*</span>
+        )}
       </span>
+
       <select
         name={name}
         required={required}
@@ -66,6 +76,7 @@ function SelectField({
         <option value="" disabled>
           Select an option
         </option>
+
         {options.map((o) => (
           <option key={o} value={o}>
             {o}
@@ -76,12 +87,24 @@ function SelectField({
   );
 }
 
-function TextAreaField({ label, name, required = true }: { label: string; name: string; required?: boolean }) {
+function TextAreaField({
+  label,
+  name,
+  required = true,
+}: {
+  label: string;
+  name: string;
+  required?: boolean;
+}) {
   return (
     <label className="block">
       <span className="mb-2 block text-[13px] font-medium tracking-wide text-[var(--color-body)]">
-        {label} {required && <span className="text-[var(--color-brand)]">*</span>}
+        {label}{" "}
+        {required && (
+          <span className="text-[var(--color-brand)]">*</span>
+        )}
       </span>
+
       <textarea
         name={name}
         required={required}
@@ -92,7 +115,13 @@ function TextAreaField({ label, name, required = true }: { label: string; name: 
   );
 }
 
-function SubmitButton({ label, pending }: { label: string; pending: boolean }) {
+function SubmitButton({
+  label,
+  pending,
+}: {
+  label: string;
+  pending: boolean;
+}) {
   return (
     <button
       type="submit"
@@ -100,15 +129,43 @@ function SubmitButton({ label, pending }: { label: string; pending: boolean }) {
       className="inline-flex items-center gap-2 bg-[var(--color-brand)] px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-white transition-colors hover:bg-[var(--color-brand-dark)] disabled:opacity-60"
     >
       {pending ? "Submitting…" : label}
-      {!pending && <ArrowUpRight className="h-4 w-4" strokeWidth={2.5} />}
+
+      {!pending && (
+        <ArrowUpRight
+          className="h-4 w-4"
+          strokeWidth={2.5}
+        />
+      )}
     </button>
   );
 }
 
 /* ---------- page data ---------- */
-const serviceOptions = ["Integrated Facility Management", "Property Management", "Specialized Services", "Other"];
-const industryOptions = ["Corporate / IT Parks", "Banking & Financial Services", "Retail", "Healthcare", "Manufacturing", "Residential", "Other"];
-const hearAboutOptions = ["Search Engine", "LinkedIn", "Referral", "Industry Event", "Existing Client", "Other"];
+const serviceOptions = [
+  "Integrated Facility Management",
+  "Property Management",
+  "Specialized Services",
+  "Other",
+];
+
+const industryOptions = [
+  "Corporate / IT Parks",
+  "Banking & Financial Services",
+  "Retail",
+  "Healthcare",
+  "Manufacturing",
+  "Residential",
+  "Other",
+];
+
+const hearAboutOptions = [
+  "Search Engine",
+  "LinkedIn",
+  "Referral",
+  "Industry Event",
+  "Existing Client",
+  "Other",
+];
 
 /* ---------- component ---------- */
 export default function ContactPage() {
@@ -117,7 +174,9 @@ export default function ContactPage() {
 
   function handleEnquiry(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
     setEnquiryPending(true);
+
     setTimeout(() => {
       setEnquiryPending(false);
       setEnquirySent(true);
@@ -127,98 +186,178 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <main className="bg-[var(--color-offwhite)]">
+
+      <main className="bg-white">
+
         {/* HERO */}
-        <section className="relative overflow-hidden bg-[var(--color-ink)] py-20">
-          <Container className="relative">
-            <p className="eyebrow text-white/70">Contact OneSIS</p>
-            <h1 className="mt-5 font-display text-[2.5rem] leading-[1.1] text-white sm:text-[3.25rem]">
-              Let&apos;s build facilities, <span className="accent">together.</span>
-            </h1>
-            <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-white/70">
-              Reach the nearest OneSIS team for a facility management enquiry.
-            </p>
-          </Container>
-        </section>
+        <PageHero
+          eyebrow="Contact OneSIS"
+          heading={
+            <>
+              Let&apos;s build facilities,{" "}
+              <span className="accent">together.</span>
+            </>
+          }
+          description="Reach the nearest OneSIS team for a facility management enquiry."
+          backgroundImage={images.contactFormBanner}
+        />
 
         {/* FORM + SIDEBAR */}
         <section className="py-20">
           <Container className="grid gap-12 lg:grid-cols-12">
+
+            {/* FORM */}
             <div className="lg:col-span-7">
               <p className="eyebrow">General Enquiry</p>
+
               <h2 className="mt-4 font-display text-[2rem] leading-[1.12] text-[var(--color-ink)] sm:text-[2.5rem]">
-                Tell us what your <span className="accent">facility</span> needs.
+                Tell us what your{" "}
+                <span className="accent">facility</span> needs.
               </h2>
 
               {enquirySent ? (
                 <div className="mt-8 flex items-start gap-3 border border-[var(--color-brand)]/25 bg-[var(--color-brand-tint)] p-6">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[var(--color-brand)]" />
+
                   <div>
-                    <p className="font-semibold text-[var(--color-ink)]">Enquiry received.</p>
+                    <p className="font-semibold text-[var(--color-ink)]">
+                      Enquiry received.
+                    </p>
+
                     <p className="mt-1 text-[14px] text-[var(--color-body)]">
-                      A regional OneSIS team will get in touch within 2 business days.
+                      A regional OneSIS team will get in touch within
+                      2 business days.
                     </p>
                   </div>
                 </div>
               ) : (
-                <form onSubmit={handleEnquiry} className="mt-8 space-y-5">
+                <form
+                  onSubmit={handleEnquiry}
+                  className="mt-8 space-y-5"
+                >
                   <div className="grid gap-5 sm:grid-cols-2">
-                    <Field label="Full Name" name="fullName" />
-                    <Field label="Organisation Name" name="organisation" />
+                    <Field
+                      label="Full Name"
+                      name="fullName"
+                    />
+
+                    <Field
+                      label="Organisation Name"
+                      name="organisation"
+                    />
                   </div>
+
                   <div className="grid gap-5 sm:grid-cols-2">
-                    <Field label="Designation" name="designation" required={false} />
-                    <Field label="Email Address" name="email" type="email" />
+                    <Field
+                      label="Designation"
+                      name="designation"
+                      required={false}
+                    />
+
+                    <Field
+                      label="Email Address"
+                      name="email"
+                      type="email"
+                    />
                   </div>
+
                   <div className="grid gap-5 sm:grid-cols-2">
-                    <Field label="Phone Number" name="phone" type="tel" />
-                    <Field label="City / Location" name="city" />
+                    <Field
+                      label="Phone Number"
+                      name="phone"
+                      type="tel"
+                    />
+
+                    <Field
+                      label="City / Location"
+                      name="city"
+                    />
                   </div>
+
                   <div className="grid gap-5 sm:grid-cols-2">
-                    <SelectField label="Service Required" name="service" options={serviceOptions} />
-                    <SelectField label="Industry Sector" name="industry" options={industryOptions} />
+                    <SelectField
+                      label="Service Required"
+                      name="service"
+                      options={serviceOptions}
+                    />
+
+                    <SelectField
+                      label="Industry Sector"
+                      name="industry"
+                      options={industryOptions}
+                    />
                   </div>
-                  <TextAreaField label="Message / Requirements" name="message" />
+
+                  <TextAreaField
+                    label="Message / Requirements"
+                    name="message"
+                  />
+
                   <SelectField
                     label="How did you hear about us?"
                     name="source"
                     options={hearAboutOptions}
                     required={false}
                   />
-                  <SubmitButton label="Submit Enquiry" pending={enquiryPending} />
+
+                  <SubmitButton
+                    label="Submit Enquiry"
+                    pending={enquiryPending}
+                  />
                 </form>
               )}
             </div>
 
+            {/* SIDEBAR */}
             <aside className="lg:col-span-5">
               <div className="overflow-hidden border border-[var(--color-border)] bg-white p-7">
+
                 <h3 className="font-display text-[19px] text-[var(--color-ink)]">
                   Prefer to reach a region directly?
                 </h3>
+
                 <p className="mt-2 text-[14px] leading-relaxed text-[var(--color-body)]">
-                  Find the branch office closest to your site in our regional directory.
+                  Find the branch office closest to your site in our
+                  regional directory.
                 </p>
+
                 <a
                   href="#"
                   className="mt-4 inline-flex items-center gap-1.5 text-[14px] font-semibold text-[var(--color-brand)] hover:text-[var(--color-brand-dark)]"
                 >
                   View regional office directory
+
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
 
                 <div className="mt-7 space-y-3 border-t border-[var(--color-border)] pt-6">
-                  <a href="mailto:connect@onesis.in" className="flex items-center gap-3 text-[14px] text-[var(--color-body)] hover:text-[var(--color-ink)]">
-                    <Mail className="h-4 w-4 text-[var(--color-brand)]" /> connect@onesis.in
+
+                  <a
+                    href="mailto:connect@onesis.in"
+                    className="flex items-center gap-3 text-[14px] text-[var(--color-body)] hover:text-[var(--color-ink)]"
+                  >
+                    <Mail className="h-4 w-4 text-[var(--color-brand)]" />
+
+                    connect@onesis.in
                   </a>
-                  <a href="tel:+911234567890" className="flex items-center gap-3 text-[14px] text-[var(--color-body)] hover:text-[var(--color-ink)]">
-                    <Phone className="h-4 w-4 text-[var(--color-brand)]" /> +91 12345 67890
+
+                  <a
+                    href="tel:+911234567890"
+                    className="flex items-center gap-3 text-[14px] text-[var(--color-body)] hover:text-[var(--color-ink)]"
+                  >
+                    <Phone className="h-4 w-4 text-[var(--color-brand)]" />
+
+                    +91 12345 67890
                   </a>
+
                 </div>
               </div>
             </aside>
+
           </Container>
         </section>
       </main>
+
       <Footer />
     </>
   );

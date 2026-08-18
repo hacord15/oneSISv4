@@ -6,6 +6,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { CareerSubNav } from "@/components/ui/CareerSubNav";
 import { OpeningsList } from "@/components/career/OpeningsList";
+import { images } from "@/lib/images";
 
 export const metadata = {
   title: "Current Openings | Careers at OneSIS",
@@ -26,6 +27,7 @@ export default function OpeningsPage() {
             </>
           }
           description="Join a team of 3.5 lakh+ professionals across India. Browse open roles below, filter by department, and apply directly."
+            backgroundImage={images.currentopeningsBanner}
         />
 
         <CareerSubNav />

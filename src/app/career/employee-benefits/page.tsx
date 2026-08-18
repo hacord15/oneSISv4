@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { CareerSubNav } from "@/components/ui/CareerSubNav";
+import { images } from "@/lib/images";
 
 // NOTE: Placeholder benefit categories for layout/demo purposes only.
 // Replace with confirmed HR policy details (coverage amounts, leave days,
@@ -61,6 +62,7 @@ export default function BenefitsPage() {
             </>
           }
           description="We invest in the people who keep every OneSIS site running — with benefits built around health, financial security, and growth."
+          backgroundImage={images.employeeBenefitsBanner}
         />
 
         <CareerSubNav />
