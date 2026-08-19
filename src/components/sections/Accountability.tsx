@@ -60,7 +60,6 @@
 //   );
 // }
 
-
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { accountability } from "@/lib/content";
@@ -146,7 +145,7 @@ export function Accountability() {
             {values.map(({ Icon, title, description }) => (
               <div
                 key={title}
-                className="flex flex-col gap-5 px-6 py-10 sm:px-7 xl:px-8"
+                className="flex flex-col items-center sm:items-start gap-5 px-6 py-10 sm:px-7 xl:px-8"
               >
                 {/* Icon — red outline, no fill */}
                 <Icon
@@ -156,12 +155,12 @@ export function Accountability() {
                 />
 
                 {/* Title — bold uppercase, red-black */}
-                <h3 className="whitespace-pre-line text-[12.5px] font-bold leading-snug tracking-[0.08em] text-[#8b1a1a] uppercase">
+                <h3 className="whitespace-pre-line text-center sm:text-left text-[12.5px] font-bold leading-snug tracking-[0.08em] text-[#8b1a1a] uppercase">
                   {title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-[13.5px] leading-relaxed text-[var(--color-body)] text-center sm:text-left">
+                <p className="text-center sm:text-left text-[13.5px] leading-relaxed text-[var(--color-body)]">
                   {description}
                 </p>
               </div>
@@ -187,7 +186,7 @@ export function Accountability() {
             </div>
 
             {/* Keyword pills separated by | */}
-            <div className="flex items-center gap-4 sm:gap-6">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
               {keywords.map((kw, i) => (
                 <span key={kw} className="flex items-center gap-4 sm:gap-6">
                   <span className="text-[11.5px] font-extrabold tracking-[0.18em] text-[#8b1a1a] uppercase">
